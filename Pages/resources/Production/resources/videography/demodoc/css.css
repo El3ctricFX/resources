@@ -1,0 +1,10 @@
+table, tr, td, h4 {
+    border: 1px solid white;
+    border-radius: 10px;
+  
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;;
+}
+
+

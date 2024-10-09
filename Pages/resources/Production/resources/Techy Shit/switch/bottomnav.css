@@ -1,0 +1,48 @@
+.socials-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* adjust the background color as needed */
+    padding: 10px;
+    display: flex;
+   color: white;
+   text-align: center;
+  }
+  
+  .socials-nav a {
+    margin: 0 10px;
+  }
+  
+  .socials-nav img {
+    width: 30px; /* adjust the logo size as needed */
+    height: 30px;
+  }
+  
+  .fa-youtube {
+    font-size: 32px;
+  }
+  
+  .fa-github {
+    font-size: 30px;
+  }
+  
+  .fa-x-twitter {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  .fa-mastodon {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  .fa-discord {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  
+  
+  
+  

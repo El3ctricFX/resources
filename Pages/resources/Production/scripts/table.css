@@ -1,0 +1,15 @@
+table, tr, td, h4 {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;;
+}
+
+
+h4 {
+    text-shadow: 0px 0px 10px red;
+    color: red;
+    opacity: 80%;
+}
