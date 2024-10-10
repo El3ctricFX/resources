@@ -10,6 +10,8 @@ Within this repo you are able to find the source code of the website and if you 
 
 ### Trailer
 <hr>
-![gif](https://github.com/user-attachments/assets/c95e5ef3-4580-4bbe-8c53-990cf32a5ad9)
+
+![gif](https://github.com/user-attachments/assets/5ec2f388-9951-4f1c-a407-b5e75edee26c)
+
 
 
