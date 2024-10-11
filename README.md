@@ -4,7 +4,10 @@ Within this repo you are able to find the source code of the website and if you 
 
 ## The Official Website domains
 
+https://electricproductions.pages.dev/
+https://el3ctricfx.github.io/website
 
+#### hyperlinks
 <a href="https://el3ctricfx.github.io/website">Github Pages</a> <b>(This Repo)</b> or <a href="https://electricproductions.pages.dev/">Cloudflare Pages</a>
 
 
