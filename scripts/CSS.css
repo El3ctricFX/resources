@@ -1,5 +1,5 @@
 body {
-    background: #202020;
+    background: #181A1B;
     font: 100% system-ui;
   }
   
@@ -8,7 +8,7 @@ body {
   }
   
   body.dark-theme {
-    background: #313131;
+    background: #181A1B;
   }
   body.dark-theme h1,
   body.dark-theme p {
@@ -22,12 +22,15 @@ body {
     color: rgb(101, 168, 255);
   }
 
+  .fa-book {
+    color: rgb(98, 114, 124);
+  }
 
   /* Nav bar */
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #262A2B;
   overflow: hidden;
 }
 
@@ -40,7 +43,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   margin-top: 5px;
-  border: 1px solid #000000;
+  border: 1px solid #8C8273;
 }
 
 /* Change the color of links on hover */
