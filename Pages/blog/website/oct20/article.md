@@ -7,7 +7,7 @@
 
 So for this website i have a few things im trying to accomplish. <br>
 
-The main thing is just to simply share resources no matter if its for production area's like videography or graphics or even drones to where i mainly special or even possibly web design, i may not be specialize in it but i believe that i have enough knowledge to share and thats the sole bases of this website is just to simply share what i learn and even better for you guys to also share and thats the reason i made the forms on the [Main Page](../../../../index.html) is that not just i can share resources but so we can all learn along the way as a community!
+The main thing is just to simply share resources no matter if its for production area's like videography or graphics or even drones to where i mainly special or even possibly web design, i may not be specialized in it but i believe that i have enough knowledge to share and thats the sole bases of this website is just to simply share what i learn and even better for you guys to also share and thats the reason i made the forms on the [Main Page](../../../../index.html) is that not just i can share resources but so we can all learn along the way as a community!
 
 Another portion of this website is about Privacy & security,
 
