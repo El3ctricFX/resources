@@ -1,6 +1,8 @@
 # October 25th, 2024 
 
 - added spaces between verses
+
+### Verses
 - Added [Romains 10:17](https://www.biblegateway.com/passage/?search=romans%2010%3A17&version=NLT)
 - Added [Romans 1:16](https://www.biblegateway.com/passage/?search=romans%201%3A16&version=NLT)
 - Added [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians%204%3A6&version=NLT)
@@ -17,6 +19,8 @@
 - Added [Psalm 23](https://www.biblegateway.com/passage/?search=psalm%2023&version=NLT)
 - Added [John 15:18-19](https://www.biblegateway.com/passage/?search=john%2015%3A18-19&version=NLT)
 - Added [James 1:2-4](https://www.biblegateway.com/passage/?search=james%201%3A2-4&version=NLT)
+
+### Creators
 - Added [foofoobean](https://www.tiktok.com/@foofoobean)
 - Added [brycecrawford](https://www.tiktok.com/@brycecrawford)
 - Added [https://www.tiktok.com/@kaleyinchrist](KaleyInChrist)
@@ -26,7 +30,7 @@
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 
 # October 21st, 2024
@@ -46,7 +50,7 @@ Fixed my Grammar issues within the first blog post
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # October 19th, 2024
 
@@ -56,7 +60,7 @@ Made by @El3ctricFX
 
 ## credit
 
-made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 
 # October 13th, 2024
@@ -94,7 +98,7 @@ made by @El3ctricFX
 
 ## Credits
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 
 # October 12th, 2024
@@ -116,7 +120,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # October 11th, 2024
 
@@ -126,7 +130,7 @@ Made by @El3ctricFX
 
 ## Credits
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # October 9th, 2024
 
@@ -136,7 +140,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # October 6th, 2024
 
@@ -151,7 +155,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 
 # October 2nd, 2024
@@ -163,7 +167,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 
 # October 1st, 2024
@@ -178,7 +182,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX 
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # August 26th, 2024
 
@@ -195,7 +199,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 
 # August 19th, 2024
@@ -205,7 +209,7 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX 
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # August 8th, 2024
 
@@ -213,4 +217,4 @@ Made by @El3ctricFX
 
 ## Credit
 
-Made by @El3ctricFX
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
