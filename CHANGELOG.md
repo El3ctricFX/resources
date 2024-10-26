@@ -1,5 +1,32 @@
 # October 25th, 2024 
 
+- added spaces between verses
+- Added [Romains 10:17](https://www.biblegateway.com/passage/?search=romans%2010%3A17&version=NLT)
+- Added [Romans 1:16](https://www.biblegateway.com/passage/?search=romans%201%3A16&version=NLT)
+- Added [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians%204%3A6&version=NLT)
+- Added [Luke 6:27-29](https://www.biblegateway.com/passage/?search=luke%206%3A27-29&version=NLT)
+- Added [Luke 6:35-36](https://www.biblegateway.com/passage/?search=luke%206%3A35-36&version=NLT)
+- Added [1 Corinthians 13:4-8](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A4-8&version=NLT)
+- Added [Romans 10:9](https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=NLT)
+- Added [Ecclesiastes 3:1](https://www.biblegateway.com/passage/?search=Ecclesiastes%203%3A1&version=NLT)
+- Added [Romans 8:18](https://www.biblegateway.com/passage/?search=romans%208%3A18&version=NLT)
+- Added [James 1:6](https://www.biblegateway.com/passage/?search=james%201%3A6&version=NLT)
+- Added [Psalm 118:13-14](https://www.biblegateway.com/passage/?search=psalm%20118%3A13-14&version=NLT)
+- Added [1 Peter 5:6](https://www.biblegateway.com/passage/?search=1%20peter%205%3A6&version=NLT)
+- Added [1 Peter 5:9](https://www.biblegateway.com/passage/?search=1%20peter%205%3A9&version=NLT)
+- Added [Psalm 23](https://www.biblegateway.com/passage/?search=psalm%2023&version=NLT)
+- Added [John 15:18-19](https://www.biblegateway.com/passage/?search=john%2015%3A18-19&version=NLT)
+- Added [James 1:2-4](https://www.biblegateway.com/passage/?search=james%201%3A2-4&version=NLT)
+- Added [foofoobean](https://www.tiktok.com/@foofoobean)
+- Added [brycecrawford](https://www.tiktok.com/@brycecrawford)
+- Added [https://www.tiktok.com/@kaleyinchrist](KaleyInChrist)
+- Added [Walking2thecross](https://www.tiktok.com/@walking2thecross)
+- Added [auntieannespretzelslover](https://www.tiktok.com/@auntieannespretzelslover)
+- Moved Changelog from discussions to .md format
+
+## Credit
+
+Made by @El3ctricFX
 
 
 # October 21st, 2024
