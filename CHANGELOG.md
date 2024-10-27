@@ -4,8 +4,8 @@
 > - [Matthew 16:24](https://www.biblegateway.com/passage/?search=Matthew%2016%3A24&version=NKJV)
 
 ### Blog
-> - Added blog about [How i write my articles with HTML & Markdown?]()
-> - Added Blog about [Isaiah 60]()
+> - Added blog about [How i write my articles with HTML & Markdown?](https://electricproductions.pages.dev/Pages/blog/website/October%2027/article)
+> - Added Blog about [Isaiah 60](https://electricproductions.pages.dev/Pages/blog/gospel%20articles/oct27/article)
 
 # October 25th, 2024 
 
