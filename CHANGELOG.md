@@ -9,6 +9,9 @@
 > - Added blog about [How i write my articles with HTML & Markdown?](https://electricproductions.pages.dev/Pages/blog/website/October%2027/article)
 > - Added Blog about [Isaiah 60](https://electricproductions.pages.dev/Pages/blog/gospel%20articles/oct27/article)
 
+### Random
+> - Changed the changelog on the index.html to this changelog and not in discussions
+
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
