@@ -1,3 +1,12 @@
+# October 27
+
+### Verses
+> - [Matthew 16:24](https://www.biblegateway.com/passage/?search=Matthew%2016%3A24&version=NKJV)
+
+### Blog
+> - Added blog about [How i write my articles with HTML & Markdown?]()
+> - Added Blog about [Isaiah 60]()
+
 # October 25th, 2024 
 
 - added spaces between verses
