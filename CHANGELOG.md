@@ -7,6 +7,10 @@
 > - Added blog about [How i write my articles with HTML & Markdown?](https://electricproductions.pages.dev/Pages/blog/website/October%2027/article)
 > - Added Blog about [Isaiah 60](https://electricproductions.pages.dev/Pages/blog/gospel%20articles/oct27/article)
 
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # October 25th, 2024 
 
 - added spaces between verses
