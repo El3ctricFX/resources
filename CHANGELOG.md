@@ -2,6 +2,7 @@
 
 ### Verses
 > - [Matthew 16:24](https://www.biblegateway.com/passage/?search=Matthew%2016%3A24&version=NKJV)
+> - [Psalm 4:8](https://www.biblegateway.com/passage/?search=Psalm%204%3A8&version=NKJV)
 
 ### Blog
 > - Added blog about [How i write my articles with HTML & Markdown?](https://electricproductions.pages.dev/Pages/blog/website/October%2027/article)
