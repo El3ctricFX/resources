@@ -1,9 +1,11 @@
 # October 27
 
 ### Verses
-> - [Matthew 16:24](https://www.biblegateway.com/passage/?search=Matthew%2016%3A24&version=NKJV)
-> - [Psalm 4:8](https://www.biblegateway.com/passage/?search=Psalm%204%3A8&version=NKJV)
-> - [James 5:16](https://www.biblegateway.com/passage/?search=James%205%3A16&version=NKJV)
+> - Added [Matthew 16:24](https://www.biblegateway.com/passage/?search=Matthew%2016%3A24&version=NKJV)
+> - Added [Psalm 4:8](https://www.biblegateway.com/passage/?search=Psalm%204%3A8&version=NKJV)
+> - Added [James 5:16](https://www.biblegateway.com/passage/?search=James%205%3A16&version=NKJV)
+> - Added [1 Corinthians 10:13](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A13&version=NKJV)
+> - Added [Matthew 11:28](https://www.biblegateway.com/passage/?search=Matthew%2011%3A28&version=NKJV)
 
 ### Blog
 > - Added blog about [How i write my articles with HTML & Markdown?](https://electricproductions.pages.dev/Pages/blog/website/October%2027/article)
@@ -11,6 +13,7 @@
 
 ### Random
 > - Changed the changelog on the index.html to this changelog and not in discussions
+> - Added Things-To-Change.md
 
 ## Credit
 
