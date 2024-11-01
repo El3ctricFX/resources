@@ -1,3 +1,12 @@
+# October 31
+
+> - Updated Isaiah 60 to where if you hit back button it wouldnt go to wrong section (woops)
+> - posted Halloween blog
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # October 30
 
 > - changed the source code from proton drive to this github repo on index.html aka main page
