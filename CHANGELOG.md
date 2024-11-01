@@ -1,4 +1,4 @@
-# November 1 
+# November 1 [Changes](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/c1c65ac677cc06e0b9c4bc8c9d1ed5007e2888c4)
 
 > - Added [Casting Crowns][https://www.youtube.com/@CastingCrownsOfficial/videos]
 > - Added [Chris Tomlin](https://www.youtube.com/channel/UCsNH0JAvjeNjwJKrS_509EA)
