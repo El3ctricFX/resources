@@ -1,3 +1,12 @@
+# November 1 
+
+> - Added [Casting Crowns][https://www.youtube.com/@CastingCrownsOfficial/videos]
+> - Added [Chris Tomlin](https://www.youtube.com/channel/UCsNH0JAvjeNjwJKrS_509EA)
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # October 31
 
 > - Updated Isaiah 60 to where if you hit back button it wouldnt go to wrong section (woops)
