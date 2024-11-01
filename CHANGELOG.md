@@ -3,7 +3,7 @@
 > - Added [Casting Crowns](https://www.youtube.com/@CastingCrownsOfficial/videos)
 > - Added [Chris Tomlin](https://www.youtube.com/channel/UCsNH0JAvjeNjwJKrS_509EA)
 
-> - Cleaned up Changelog [[]()]
+> - Cleaned up Changelog [[802517c](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/802517c6a46a746ee83ba781065e8cd7ee24838a)]
 
 ## Credit
 
