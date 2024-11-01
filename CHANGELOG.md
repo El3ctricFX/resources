@@ -1,3 +1,11 @@
+# October 30
+
+> - changed the source code from proton drive to this github repo on index.html aka main page
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # October 27
 
 ### Verses
