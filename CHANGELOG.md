@@ -1,28 +1,45 @@
-# November 1 [Changes](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/c1c65ac677cc06e0b9c4bc8c9d1ed5007e2888c4)
+# November 1 ([c1c65ac](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/c1c65ac677cc06e0b9c4bc8c9d1ed5007e2888c4))
 
-> - Added [Casting Crowns][https://www.youtube.com/@CastingCrownsOfficial/videos]
+> - Added [Casting Crowns](https://www.youtube.com/@CastingCrownsOfficial/videos)
 > - Added [Chris Tomlin](https://www.youtube.com/channel/UCsNH0JAvjeNjwJKrS_509EA)
+
+> - Cleaned up Changelog [[]()]
 
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
-# October 31
+<hr>
+
+# October 31 (Commits [06d61de](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/06d61de83b393d0c22425cbecf62118f1e5f6322#diff-970587c69713675f4f677851ed0d7b0c1c60d93a196bcd1196e2abb79db3ddfb) | [d8a0e05](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d8a0e059bbfe2150ed1091d057122634f62686e1))
 
 > - Updated Isaiah 60 to where if you hit back button it wouldnt go to wrong section (woops)
 > - posted Halloween blog
 
-## Credit
-
+## Credit 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
-# October 30
+<hr>
+
+# October 30 ([d27712d](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d27712d4e7668a7f69bf90bcee40a81d32f1f5c4))
 
 > - changed the source code from proton drive to this github repo on index.html aka main page
 
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
+
+# October 29 ([f81084e](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/f81084e5a39994b303f00bcc66fa73a55e4423a7))
+
+> - Added [Crosswire](https://crosswire.org/)
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # October 27
 
@@ -37,13 +54,38 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 > - Added blog about [How i write my articles with HTML & Markdown?](https://electricproductions.pages.dev/Pages/blog/website/October%2027/article)
 > - Added Blog about [Isaiah 60](https://electricproductions.pages.dev/Pages/blog/gospel%20articles/oct27/article)
 
-### Random
+### Random 
+
 > - Changed the changelog on the index.html to this changelog and not in discussions
 > - Added Things-To-Change.md
+
+### Commits
+
+> - [a88968e](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/a88968ecabfb5e63d7b2b47537107a43615da83e)
+> - [d559667](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d55966781b9ac326bba4bbc9db70ea0eeb8886e2)
+> - [e78df66](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/e78df6686f868785e5f1e83c41a4cff7d3520fc5)
+> - [4642000](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/4642000a83a418259d8e1f2d9d2cb34548ff1b5d#diff-ef81dd690e18a3108d90ddc425a3f2011212e597dc87a45ad81fa3c9d56ad9e0)
+> - [eb243ee](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/eb243ee1cac7c9edeadce7f55760e27188f4c11c)
+> - [f8dad28](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/f8dad280b8e1c981e34363ba6afcba928f31be00)
+> - [7b39ace](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/7b39acefa793ee31957aceb59b6df4b12dcc33fb)
+> - [db43f2f](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/db43f2f6f4a7f2458634d7e712f40de9ed4d2551)
+> - [6cbf24a](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/6cbf24abb5658d62700b4efd2630dd8e15f3ebba)
+> - [29e00df](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/29e00df68394cb6dd0a4cb8e1ad9b44fa58c5317)
+> - [bab731a](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/bab731a2fa4957cce1f51f12e2995f89278c39e0)
+> - [0a42ef8](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/0a42ef81dc12e1b1a48de3696c7b4b2b02d8177b)
+> - [1d24fd5](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/1d24fd5da90e8e9c786f1cf7642caef3d1aff99f)
+> - [eed98d3](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/eed98d3352fec3d4ca7a563f3f3fe4a169111747)
+> - [133dfce](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/133dfce592b8ac18c6bd7e3255794953ba8c222e)
+> - [61c1ff7](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/61c1ff79c71302f711b79bc33b8562af45851683)
+> - [1dff924](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/1dff924870e548f0b26abad39ee786be41e04121)
+
+
 
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # October 25th, 2024 
 
@@ -76,17 +118,32 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 > - Moved Changelog from discussions to .md format
 
+### Commits
+
+> - [75c365b](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/75c365b0090c8c1543df493a4b45303fb9b995d6)
+> - [f8c3c2b](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/f8c3c2be1bbfa1d3a3ce8b27d5b55dd28f99483a)
+> - [8ab0567](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/8ab05675e9210d2cb870b76753c74f73d60126bd)
+> - [05e5de9](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/05e5de939b067d8c5e82403c05af6bba87595f9c)
+> - [70996fd](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/70996fdf57666d6f080b742250d5ab53a20df688)
+> - [c6d4201](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/c6d4201a1cd58e6a27b14fbf87144f3fc3de8d76)
+
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
+<hr>
 
-# October 21st, 2024
+# October 21st, 2024 ([2a8dfb4](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/2a8dfb4ef5e66aa4bdba1e5c03f9f0e3e0c13c46) | [f7d3201](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/f7d320146a69a6e87736543a2dd9769dbc28c836))
 
 > Fixed my Grammar issues within the first blog post
 
+## Credit
 
-# October 20th, 2024
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
+
+# October 20th, 2024 ([b95dc93](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/b95dc93656c9fa6774f95f23cee70737ff2438f4))
 
 ## Addition
 
@@ -100,7 +157,9 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
-# October 19th, 2024
+<hr>
+
+# October 19th, 2024 ([2624dca](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/2624dcaee8e62677d55b63f6bb095a216ca575c1))
 
 ## Additions
 
@@ -110,6 +169,7 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
+<hr>
 
 # October 13th, 2024
 
@@ -142,10 +202,19 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 > - Added [1 John 1:9](https://www.biblestudytools.com/nlt/1-john/1-9.html)
 > - Added [Romans 6:23](https://www.biblestudytools.com/nlt/romans/6-23.html)
 
+## Commits
+
+> - [a29e681](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/a29e6817cddee002320c3c69d1de76c267ad19ed)
+> - [5d0e227](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/5d0e2276421a8c6c4912527c9d65e4743de2b7d3)
+> - [e485c87](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/e485c87ee6f23d1de5f8894d5a4f7f528f291eb5)
+> - [2b05eb8](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/2b05eb851e5f9314d9b95c9fbebff8c53d0e3171)
+> - [ae937c3](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/ae937c3a4c113c5333e5bed859394d6ca25f4987)
+
 ## Credits
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
+<hr>
 
 # October 12th, 2024
 
@@ -164,9 +233,17 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 > - Renamed the repo to the website domain so that u dont have to do el3ctricfx.github.io/website and now just el3ctricfx.github.io
 > - added cyber news to [Blog](https://el3ctricfx.github.io/Pages/resources/Production/resources/Techy%20Shit/Media/media.html) section
 
+## Commits 
+
+> - [d05d630](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d05d6309e093cd101e5533ab7de23e7f0accaf0a)
+> - [bbc6be0](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/bbc6be0f1a7c7b707abe84c6a0a927e29740b4a0)
+> - [54789ef](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/54789ef5b4f56dc7be6a09a9d8893016675f4717)
+
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # October 11th, 2024
 
@@ -174,9 +251,22 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 > - Moved the Cloudflare pages website from just local files to just syncing with git
 
+## Commits
+
+> - [9c5667c](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/9c5667cd80be1d07499975f8d501997fc250516f)
+> - [d3d4d17](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d3d4d1741ab0577113a786e0c42b3adf13375faf)
+> - [276025c](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/276025cf1672ef426190162ee72999b450bccba9)
+> - [e5698ca](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/e5698caa34126dba5e062c1d70e0195696a8c51d)
+> - [929e7a2](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/929e7a234a431a2c39ca9c73e5d8667898bdf59f)
+> - [5c8e5f8](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/5c8e5f888eb81018d23e511d5ec821c29392080f)
+> - [297e4e5](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/297e4e503c6fdf2f00253a59569902a9e3156da8)
+> - [d1be3b5](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d1be3b5d5739491b1adca9d2cbd133679ef9f71b)
+
 ## Credits
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # October 9th, 2024
 
@@ -184,9 +274,23 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 > - Made the github repo
 
+## Commits
+
+> - [d97df3b](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d97df3bb0b9b8d08e072d5dfc8d367b5824eabc3)
+> - [a8b39ef](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/a8b39ef3b6596bafa7732a67a5238bb597388b01)
+> - [8e3f458](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/8e3f45880482a418cdfa44bb19076de726ea505c)
+> - [6939e9f](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/6939e9fb1cfdf688b763c477cd240028dd98afa2)
+> - [d000520](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/d0005206d6b5cb995c462224a322c9a266c48587)
+> - [65d6683](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/65d668302485230fae2d1f22b4ecdea6fa739d47)
+> - [0d0f0e0](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/0d0f0e004efdeae0b7b984ef21a4cf93a8dacc57)
+> - [7212ed7](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/7212ed7b716b3d70b6dee54b5f976c2a89c123ed)
+> - [27452e3](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/27452e3de740bd27f6a212b0abe42335f68f6b2d)
+
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # October 6th, 2024
 
@@ -203,6 +307,7 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
+<hr>
 
 # October 2nd, 2024
 
@@ -215,6 +320,7 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
+<hr>
 
 # October 1st, 2024
 
@@ -229,6 +335,8 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # August 26th, 2024
 
@@ -247,6 +355,7 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
+<hr>
 
 # August 19th, 2024
 
@@ -256,6 +365,8 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 ## Credit
 
 Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
 
 # August 8th, 2024
 
