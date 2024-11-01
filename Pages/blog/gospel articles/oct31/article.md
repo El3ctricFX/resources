@@ -10,6 +10,8 @@ Just last night i had came across [this](https://www.youtube.com/watch?v=m4eNSbC
 
 becareful guys, be safe, god bless Amen!
 
+- 2 Thessalonians 3:3
+
 
 
 
