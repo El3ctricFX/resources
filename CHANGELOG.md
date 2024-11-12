@@ -1,3 +1,12 @@
+# November 11 
+
+> - Added [Answers in Genesis](https://answersingenesis.org/)
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+<hr>
+
 # November 1 ([c1c65ac](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/c1c65ac677cc06e0b9c4bc8c9d1ed5007e2888c4))
 
 > - Added [Casting Crowns](https://www.youtube.com/@CastingCrownsOfficial/videos)
