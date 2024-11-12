@@ -1,4 +1,4 @@
-# November 11 
+# November 11 ([2f7c0f4](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/2f7c0f48c436bcba3d7dca624c6a9f63f125e778))
 
 > - Added [Answers in Genesis](https://answersingenesis.org/)
 ## Credit
