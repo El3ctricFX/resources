@@ -1,3 +1,47 @@
+# November 18 ([dbfc76b](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/dbfc76b28a33e8edd7c44a9b6707a026a95b93b0))
+
+## Verses
+
+> - Added [Luke 23:34](https://www.biblegateway.com/passage/?search=luke+23%3A34)
+> - Added [Galatians 2:20](https://www.biblegateway.com/passage/?search=Galatians%202%3A20&version=NIV)
+> - Added [Matthew 11:28](https://www.biblegateway.com/passage/?search=matthew%2011%3A28&version=NIV)'
+> - Added <a href="https://www.biblegateway.com/passage/?search=Matthew%206%3A33-34&version=NLT">Matthew 6:33-34</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=Ephesians%204%3A29&version=NLT">Ephesians 4:29</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20corinthians%2013%3A4-8&version=NLT">1 Corinthians 13:4-8</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=isaiah%2044%3A22&version=NLT">Isaiah 44:22</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=Romans%2012%3A2&version=NIV">Romans 12:2</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20john%202%3A15-17&version=NLT">1 John 2:15-17</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20corinthians%2010%3A13&version=NIV">1 Corinthians 10:13</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=2%20peter%203%3A18&version=NIV">2 Peter 3:18</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=psalm%2025%3A4&version=ESV">Psalm 25:4</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=philippians%204%3A13&version=NASB">Philippians 4:13</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=James%201%3A2-4&version=NLT">James 1:2-4</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=James%201%3A6&version=NLT">James 1:6</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=james%204%3A4&version=NLT">James 4:4</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=Matthew%207%3A7&version=NLT">Matthew 7:7</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=psalm%20118%3A13-14&version=NLT">Psalm 118:13-14</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20peter%205%3A6-7&version=NLT">1 Peter 5:6-7</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20peter%205%3A9&version=NLT">1 Peter 5:9</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=psalm%2023%3A1-6&version=NLT">Psalm 23</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20peter%205%3A8-9&version=NLT">1 Peter 5:8-9</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=john%2015%3A18&version=NLT">John 15:18</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=John%2014%3A6-7&version=NLT">John 14:6-7</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=Phili%204%3A6&version=NLT">Philippians 4:6</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=luke%206%3A27&version=NIV">Luke 6:27</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=NIV">Romans 10:9</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=ecc%203%3A1&version=NIV">Ecclesiastes 3:1</a>
+> - Added <a href="https://www.biblegateway.com/passage/?search=ecc%2010%3A1&version=NIV">Ecclesiastes 10:1</a>
+
+## Random 
+
+> - Replaced Calender suggestion on private alternatives from Simple Calendar to Fossify Calendar
+> - Removed Ghostery
+> - Added Templates
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # November 11 ([2f7c0f4](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/2f7c0f48c436bcba3d7dca624c6a9f63f125e778))
 
 > - Added [Answers in Genesis](https://answersingenesis.org/)
