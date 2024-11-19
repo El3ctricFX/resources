@@ -30,7 +30,6 @@
 > - Added <a href="https://www.biblegateway.com/passage/?search=luke%206%3A27&version=NIV">Luke 6:27</a>
 > - Added <a href="https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=NIV">Romans 10:9</a>
 > - Added <a href="https://www.biblegateway.com/passage/?search=ecc%203%3A1&version=NIV">Ecclesiastes 3:1</a>
-> - Added <a href="https://www.biblegateway.com/passage/?search=ecc%2010%3A1&version=NIV">Ecclesiastes 10:1</a>
 
 ## Random 
 
