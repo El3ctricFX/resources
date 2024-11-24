@@ -1,3 +1,11 @@
+# November 23
+
+> - Added <a href="https://www.biblegateway.com/passage/?search=1%20corinthians%207%3A17&version=MSG">1 Corinthians 7:17</a>
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # November 18 ([dbfc76b](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/dbfc76b28a33e8edd7c44a9b6707a026a95b93b0))
 
 ## Verses
