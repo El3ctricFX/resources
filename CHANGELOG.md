@@ -1,6 +1,6 @@
 # November 25
 
-> - Added <a href="https://stallman.org/">Richard Stallman's Personal Site</a> on "reason to switch" & Media
+> - Added <a href="https://stallman.org/">Richard Stallman's Personal Site</a> on "reason to switch" & Media ([05a6aac](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/05a6aac40400b43e9df7c5c30ea8c1ee36a9e09a))
 
 # November 23 ([ae8b2ca](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/ae8b2cac91fbe78a80a250d04c21b22ad6176ab3))
 
