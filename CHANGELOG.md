@@ -1,3 +1,7 @@
+# November 25
+
+> - Added <a href="https://stallman.org/">Richard Stallman's Personal Site</a> on "reason to switch" & Media
+
 # November 23 ([ae8b2ca](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/ae8b2cac91fbe78a80a250d04c21b22ad6176ab3))
 
 > - Added <a href="https://www.biblegateway.com/passage/?search=1%20corinthians%207%3A17&version=MSG">1 Corinthians 7:17</a>
