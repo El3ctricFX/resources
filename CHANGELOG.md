@@ -1,4 +1,4 @@
-# November 27
+# November 27 ([0110ff1](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/0110ff19c0dfd9e6b49ffd3cd70e238452984f82))
 
 # Added
 
