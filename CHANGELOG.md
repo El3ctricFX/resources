@@ -1,3 +1,35 @@
+# November 27
+
+# Added
+
+> - Added Galatians 6:2
+> - Added Ephesians 4:32
+> - Added 2 Timothy 2:25
+> - Added Proverbs 27:17
+> - Added Proverbs 24:16
+
+
+# Fixed
+
+> - Removed Philippians 4:6-7 Copies
+> - Removed Luke 6:27 Duplicates
+> - Removed 1 Corinthians 13:4-8 Duplicates
+> - Removed Romans 10:9 Duplicates
+> - Removed Ecclesiastes 3:1 Duplicates
+> - Removed James 1:6 Duplicates
+> - Removed Psalm 118:13-14 Duplicates
+> - Removed 1 Peter 5:6 Duplicates 
+> - Removed 1 Peter 5:9 Duplicates 
+> - Removed Psalm 23 Duplicates 
+> - Removed John 15:18 Duplicates 
+> - Removed James 1:2-4 Duplicates 
+> - Removed Matthew 11:28 Duplicates 
+> - Removed 1 Corinthians 10:13 Duplicates 
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # November 25
 
 > - Added <a href="https://stallman.org/">Richard Stallman's Personal Site</a> on "reason to switch" & Media ([05a6aac](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/05a6aac40400b43e9df7c5c30ea8c1ee36a9e09a))
