@@ -1,6 +1,10 @@
 # December 1
 
-> - Added a cross icon for website
+> - Added a cross icon for website ([88dc719](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/88dc719acfb494641b28d512c54d9a451626cc7b))
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # November 27 ([0110ff1](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/0110ff19c0dfd9e6b49ffd3cd70e238452984f82))
 
