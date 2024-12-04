@@ -1,7 +1,11 @@
-# December 3
+# December 3 ([940bec8](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/940bec8bf2ecd6d01d00326bde5eeaf6c7ef68e6))
 
 > - Moved "Random discord with daily verses" to "Communities" dropdown
 > - got rid of useless css property that made button bigger
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # December 1
 
