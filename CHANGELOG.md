@@ -1,3 +1,8 @@
+# December 3
+
+> - Moved "Random discord with daily verses" to "Communities" dropdown
+> - got rid of useless css property that made button bigger
+
 # December 1
 
 > - Added a cross icon for website ([88dc719](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/88dc719acfb494641b28d512c54d9a451626cc7b))
