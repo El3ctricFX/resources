@@ -1,3 +1,7 @@
+# December 14
+
+> - Removed Wallpaper link
+
 # December 11
 
 > - added <a href="https://www.biblegateway.com/passage/?search=Proverbs+18%3A21">Proverbs 18:21</a>
