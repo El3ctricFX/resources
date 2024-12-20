@@ -1,3 +1,7 @@
+# December 19
+
+> - Changed Jesus.html to worship.pages.dev to have a more dedicated website for our Abba Yahweh
+
 # December 14
 
 > - Removed Wallpaper link
