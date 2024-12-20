@@ -1,6 +1,10 @@
-# December 19
+# December 19 ([2e7a08a](https://github.com/El3ctricFX/el3ctricfx.github.io/commit/2e7a08ac4ec82907c6b6c865ebfe925503c4d164))
 
 > - Changed Jesus.html to worship.pages.dev to have a more dedicated website for our Abba Yahweh
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 # December 14
 
