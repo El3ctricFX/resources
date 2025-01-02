@@ -20,7 +20,7 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 ### Commit 
 
-replace
+[1f1e7de](https://github.com/El3ctricFX/resources/commit/1f1e7de29e588e60c8737995116c21800ddf8acc)
 
 ## Credit
 
