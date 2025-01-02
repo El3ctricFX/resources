@@ -1,3 +1,19 @@
+# Jan 02
+
+> - Added EasyDmarc
+
+### Commit 
+
+replace
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+# 2025 ^
+
+# 2024
+
 # December 30
 
 > - Added bo3 resources
