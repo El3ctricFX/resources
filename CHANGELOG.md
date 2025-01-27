@@ -1,3 +1,15 @@
+# Janurary 25
+
+> - Changed all the hyperlinks on the homepage to the right github repo, previously they where still stuck when i had the website all in one and not seperate like worship, resources, and main.
+
+### Commit
+
+[replace](replace)
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
 # Jan 02
 
 > - Added EasyDmarc
