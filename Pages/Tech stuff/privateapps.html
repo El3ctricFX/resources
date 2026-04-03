@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Private Apps</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* Override centering from main.css to match useful-resources.html */
+    .main-content {
+      display: block !important;
+      text-align: left !important;
+      align-items: unset !important;
+      justify-content: unset !important;
+      padding: 30px 40px 60px 40px !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    .back-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #000;
+      padding: 6px 14px;
+      border-radius: 30px;
+      transition: 0.2s;
+    }
+    .back-link a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* Details styling with clean box design */
+    details {
+      background: #fff;
+      margin-bottom: 1.5rem;
+      border: 2px solid #000;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    summary {
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 0.9rem 1.5rem;
+      background: #fafafc;
+      cursor: pointer;
+      list-style: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    /* Custom arrows for details */
+    details summary::before {
+      content: "▶"; 
+      display: inline-block;
+      transition: transform 0.2s ease;
+      transform: rotate(0deg);
+      font-size: 0.85rem;
+      margin-right: 12px;
+    }
+    details[open] > summary::before {
+      transform: rotate(90deg);
+    }
+    details[open] summary {
+      border-bottom-color: #000;
+      background: #fff;
+    }
+
+    .details-content {
+      padding: 1.2rem 1.8rem;
+      background: #fff;
+    }
+
+    .details-content ol, .details-content ul {
+      padding-left: 20px;
+    }
+    .details-content li {
+      margin-bottom: 8px;
+    }
+
+    /* Standard link style overriding for body links */
+    .details-content a {
+      color: #000;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+    .details-content a:hover {
+      text-decoration: none;
+      background: #000 !important;
+      color: #fff !important;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #000;
+    }
+    .page-desc {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #000;
+      margin: 20px 0;
+    }
+
+    /* Note and warning styling */
+    .warning-text {
+      color: #d9534f;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    
+    .info-text {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Bottom footer nav styling */
+    .bottomnav {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .bottomnav p {
+      margin-bottom: 12px;
+    }
+
+    /* Fix top-left logo link layout breaks */
+    .logo a {
+      text-decoration: none !important;
+      color: inherit !important;
+      display: inline-block !important;
+      font-weight: inherit !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="left-nav">
+      <h1 class="logo"><a href="../../index.html" style="text-decoration: none; color: inherit;">Resources</a></h1>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+
+    <div class="right-nav">
+      <ul class="menu">
+        <li class="dropdown">
+          <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+            <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a>Production ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="../Production/videography.html">Videography</a></li>
+                <li><a href="../Production/sounddesign.html">Sound Design</a></li>
+                <li><a href="../Production/graphics.html">Graphics</a></li>
+                <li><a href="../Production/3d.html">3D</a></li>
+                <li><a href="../Production/coding.html">Coding</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a>Techy Stuff ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="privateapps.html">Private Apps</a></li>
+                <li><a href="useful-resources.html">Useful Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-rss"></i> Blog ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../blog/about.html">About Website</a></li>
+            <li><a href="../blog/gospel-related.html">God & Bible Related</a></li>
+            <li><a href="../blog/technology.html">Technology</a></li>
+          </ul>
+        </li>
+
+        <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    
+    <div class="back-link">
+      <a href="../../index.html">← Back to Resources</a>
+    </div>
+
+    <h1 class="page-title">Private Apps</h1>
+    <p class="page-desc">Centralized directory of privacy-respecting tools and alternatives.</p>
+    
+    <hr>
+
+    <details closed>
+      <summary>Encrypted Email</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://proton.me/mail" target="_blank">Proton</a></li>
+          <li><a href="https://tuta.com/" target="_blank">Tuta</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Encrypted Messaging Apps</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://simplex.chat/" target="_blank">SimpleX</a></li>
+          <li><a href="https://signal.org/" target="_blank">Signal</a></li>
+          <li><a href="https://matrix.org/" target="_blank">Matrix Protocol</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>SMS Apps</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/FossifyOrg/Messages" target="_blank">Fossify Messages</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Password Manager</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://keepassxc.org/" target="_blank">KeePassXC</a> / <a href="https://github.com/Kunzisoft/KeePassDX" target="_blank">KeepassDX</a></li>
+          <li><a href="https://proton.me/pass" target="_blank">Proton Pass</a></li>
+          <li><a href="https://bitwarden.com/" target="_blank">Bitwarden</a></li>
+          <li><a href="https://github.com/Ariel-Snyder/OneKeePass" target="_blank">OneKeePass</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>TOTP / 2FA Authenticators</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/beemdevelopment/Aegis" target="_blank">Aegis</a></li>
+          <li><a href="https://ente.io/auth/" target="_blank">Ente Auth</a></li>
+        </ol>
+        <p class="info-text">Note: You can also do TOTP codes in most password managers like KeePass but I wouldn't recommend it.</p>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Browsers</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://mullvad.net/en/browser" target="_blank">Mullvad</a></li>
+          <li><a href="https://librewolf.net/" target="_blank">Librewolf</a></li>
+          <li><a href="https://brave.com/" target="_blank">Brave</a></li>
+          <li><a href="https://www.mozilla.org/en-US/firefox/" target="_blank">Firefox</a></li>
+          <li><a href="https://github.com/ungoogled-software/ungoogled-chromium" target="_blank">Ungoogled Chromium</a></li>
+          <li><a href="https://www.torproject.org/" target="_blank">Tor</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Search Engines</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://search.brave.com/" target="_blank">Brave Search</a></li>
+          <li><a href="https://searxng.org/" target="_blank">SearXNG</a></li>
+          <li><a href="https://startpage.com/" target="_blank">Startpage</a></li>
+          <li><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Browser Extensions</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://ublockorigin.com/" target="_blank">Ublock Origin</a></li>
+          <li><a href="https://privacybadger.org/" target="_blank">Privacy Badger</a></li>
+          <li><a href="https://adguard.com/" target="_blank">AdGuard</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>OS Alternatives (Desktop)</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://archlinux.org/" target="_blank">Arch Linux</a></li>
+          <li><a href="https://nixos.org/" target="_blank">NixOS</a></li>
+          <li><a href="https://www.debian.org/" target="_blank">Debian</a></li>
+          <li><a href="https://fedoraproject.org/" target="_blank">Fedora</a></li>
+          <li><a href="https://linuxmint.com/" target="_blank">Linux Mint</a> (Good for beginners)</li>
+        </ol>
+        <p class="info-text">Note: If you guys would like help to learn Linux, don't be afraid to reach out. In all seriousness, Windows is not really customizable and collects a bunch of data compared to Linux.</p>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>OS Alternatives (Mobile)</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://grapheneos.org/" target="_blank">GrapheneOS</a></li>
+          <li><a href="https://lineageos.org/" target="_blank">LineageOS</a></li>
+          <li><a href="https://calyxos.org/" target="_blank">CalyxOS</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>DNS</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://mullvad.net/en/help/dns-over-https-and-dns-over-tls" target="_blank">Mullvad DNS</a></li>
+          <li><a href="https://quad9.net/service/" target="_blank">Quad9</a></li>
+          <li><a href="https://pi-hole.net/" target="_blank">Pi-Hole</a> + Unbound</li>
+          <li><a href="https://adguard.com/" target="_blank">AdGuard</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>VPNs</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://protonvpn.com/" target="_blank">Proton</a></li>
+          <li><a href="https://mullvad.net/" target="_blank">Mullvad</a></li>
+        </ol>
+        <p class="warning-text">Warning: VPNs don't make you just straight anonymous, so be careful with which you choose.</p>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Private Notes Apps</summary>
+      <div class="details-content">
+        <ol>
+          <li>
+            <a href="https://notesnook.com/" target="_blank">Notesnook</a>
+            <span class="warning-text">(Lost notes due to app crashing all the time on Android, so be cautious)</span>
+          </li>
+          <li><a href="https://standardnotes.com/" target="_blank">Standard Notes</a></li>
+          <li><a href="https://obsidian.md/" target="_blank">Obsidian Notes</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Calendars</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://tuta.com/calendar" target="_blank">Tuta Calendar</a></li>
+          <li><a href="https://proton.me/calendar" target="_blank">Proton Calendar</a></li>
+          <li><a href="https://github.com/FossifyOrg/Calendar" target="_blank">Fossify Calendar</a></li>
+          <li><a href="https://nextcloud.com/" target="_blank">NextCloud Calendar</a> / Fossify Calendar (DAVx⁵)</li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Office Suite</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://www.openoffice.org/" target="_blank">OpenOffice</a></li>
+          <li><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Cloud & Drive Host</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://proton.me/drive" target="_blank">Proton Drive</a></li>
+          <li><a href="https://send.vis.ee/" target="_blank">Send</a></li>
+          <li><a href="https://nextcloud.com/" target="_blank">NextCloud</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Cloud Document Suite</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://cryptpad.fr/drive/" target="_blank">CryptPad</a></li>
+          <li><a href="https://proton.me/blog/docs-proton-drive" target="_blank">Proton Docs</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Photo Apps</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/rijul/aves" target="_blank">Aves</a></li>
+          <li><a href="https://github.com/FossifyOrg/Gallery" target="_blank">Fossify Gallery</a></li>
+          <li><a href="https://ente.io/" target="_blank">Ente</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>File Managers</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/FossifyOrg/File-Manager" target="_blank">Fossify File Manager</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Camera Apps</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/GrapheneOS/Camera" target="_blank">Secure Camera (GrapheneOS)</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Home Launchers</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://play.google.com/store/apps/details?id=org.n277.lynxlauncher" target="_blank">Lynx Launcher</a></li>
+          <li><a href="https://github.com/8bitKitkat/Olauncher" target="_blank">Olauncher</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Keyboard Applications</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://futo.org/keyboard/" target="_blank">FUTO Keyboard</a></li>
+          <li><a href="https://github.com/FossifyOrg/Keyboard" target="_blank">Fossify Keyboard</a></li>
+          <li><a href="https://github.com/openboard-team/openboard" target="_blank">OpenBoard</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Alternative App Stores</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://f-droid.org/" target="_blank">F-Droid</a></li>
+          <li><a href="https://auroraoss.com/" target="_blank">Aurora Store</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Contacts</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/SimpleMobileTools/Simple-Contacts" target="_blank">Simple Contacts</a></li>
+          <li><a href="https://github.com/FossifyOrg/Contacts" target="_blank">Fossify Contacts</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details closed>
+      <summary>Phone / Calling Apps</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://github.com/FossifyOrg/Phone" target="_blank">Fossify Phone</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <hr>
+
+    <div class="bottomnav">
+      <p align="center"><b>If you have any suggestions or stuff i should change get in contact and ill consider it.</b></p>
+      
+      <p align="center">For more Alternatives you are able to checkout The following Sites:<br>
+          [ 
+          <a href="https://tuta.com/blog/how-to-leave-google-gmail" target="_blank" rel="noopener">Tuta De-google list</a> 
+          | <a href="https://www.techlore.tech/resources" target="_blank" rel="noopener">Techlore Resources</a> 
+          | <a href="https://www.privacyguides.org/en/tools/" target="_blank" rel="noopener">Privacy Guides</a> 
+          | <a href="https://alternativeto.net/" target="_blank" rel="noopener">AlternativeTo</a> 
+          | <a href="https://restoreprivacy.com/#h-restoreprivacy-resources" target="_blank" rel="noopener">RestorePrivacy Resources</a> 
+          ]
+      </p>
+    </div>
+  </main>
+<script>
+    // Toggle main mobile menu (hamburger icon)
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.right-nav .menu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle script
+    const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        // Only run this JS handling if we are on a mobile screen width
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const subMenu = dropdown.nextElementSibling;
+          if (subMenu) {
+            subMenu.classList.toggle('mobile-open');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

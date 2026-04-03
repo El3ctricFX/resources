@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Sound Design</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* override centering from main.css */
+    .main-content {
+      display: block !important;
+      text-align: left !important;
+      align-items: unset !important;
+      justify-content: unset !important;
+      padding: 30px 40px 60px 40px !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    .back-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #000;
+      padding: 6px 14px;
+      border-radius: 30px;
+      transition: 0.2s;
+    }
+    .back-link a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* details styling with changing arrow */
+    details {
+      background: #fff;
+      margin-bottom: 1.5rem;
+      border: 2px solid #000;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    summary {
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 0.9rem 1.5rem;
+      background: #fafafc;
+      cursor: pointer;
+      list-style: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    /* 1. Reset standard arrows for ALL categories (1st, 2nd, 3rd+ row) */
+    details summary::before {
+      content: "▶" !important; 
+      display: inline-block;
+      transition: transform 0.2s ease;
+      transform: rotate(0deg); /* Sideways when closed */
+      font-size: 0.85rem;
+      margin-right: 12px;
+    }
+
+    /* 2. Rotate ONLY the active arrow when its specific container is opened */
+    details[open] > summary::before {
+      content: "▶" !important; 
+      transform: rotate(90deg) !important; /* Points down when open */
+    }
+
+    details[open] summary {
+      border-bottom-color: #000;
+      background: #fff;
+    }
+    .details-content {
+      padding: 1.2rem 1.8rem;
+      background: #fff;
+    }
+
+    .details-content details {
+      margin: 0.8rem 0;
+      border-width: 1.5px;
+    }
+    .details-content details summary {
+      font-size: 1.1rem;
+      padding: 0.6rem 1.2rem;
+      background: #f9f9ff;
+    }
+
+    /* Dropdown smooth animation */
+    details[open] > .details-content {
+      animation: slideDown 0.25s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    hr {
+      margin: 1rem 0;
+      border: none;
+      height: 1px;
+      background: #ddd;
+    }
+
+    /* Fix top-left logo link layout breaks */
+    .logo a {
+      text-decoration: none !important;
+      color: inherit !important;
+      display: inline-block !important;
+      font-weight: inherit !important;
+    }
+
+    /* Aesthetic Adjustment: Sharp Edges */
+    details, 
+    summary, 
+    .back-link a {
+      border-radius: 0px !important; 
+      box-shadow: 4px 4px 0 rgba(0,0,0,1);
+    }
+
+    @media (max-width: 768px) {
+      .main-content { padding: 20px 16px !important; }
+      .details-content { padding: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+<nav class="nav">
+    <div class="left-nav">
+      <h1 class="logo"><a href="../../index.html" style="text-decoration: none; color: inherit;">Resources</a></h1>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+
+    <div class="right-nav">
+      <ul class="menu">
+        <li class="dropdown">
+          <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+            <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a>Production ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="videography.html">Videography</a></li>
+                <li><a href="sounddesign.html">Sound Design</a></li>
+                <li><a href="graphics.html">Graphics</a></li>
+                <li><a href="3d.html">3D</a></li>
+                <li><a href="coding.html">Coding</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a>Techy Stuff ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="../Tech stuff/privateapps.html">Private Apps</a></li>
+                <li><a href="../Tech stuff/useful-resources.html">Useful Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-rss"></i> Blog ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../blog/about.html">About Website</a></li>
+            <li><a href="../blog/gospel-related.html">God & Bible Related</a></li>
+            <li><a href="../blog/technology.html">Technology</a></li>
+          </ul>
+        </li>
+
+        <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="back-link"><a href="../../index.html">← Back to Resources</a></div>
+
+    <h2>Sound Design Resources</h2>
+
+    <details>
+      <summary>Sound Effects</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://sound-effects.bbcrewind.co.uk/">BBC Sounds</a></li>
+          <li><a href="https://freesound.org/">Freesound</a></li>
+          <li><a href="https://www.epidemicsound.com/music/featured/">Epidemic Sounds</a></li>
+          <li><a href="https://soundraw.io/">SounDraw</a></li>
+          <li><a href="https://www.sounds-resource.com/">Sounds-Resources</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>Gaming Sound Effects</summary>
+      <div class="details-content">
+        <ol>
+          <hr>
+          <li><a href="http://bit.ly/SFX_fortnite">FN & More</a></li>
+          <li><a href="http://bit.ly/2DqMFMc">Bo2</a></li>
+          <li><a href="http://bit.ly/2DqMFMc">Minecraft</a></li>
+          <li><a href="http://bit.ly/2Fk3zxz">CS:GO</a></li>
+          <hr>
+          <p>If you need sounds that are not listed here go look at #Tiplist in <a href="https://discord.gg/t3c">T3C</a></p>
+          <hr>
+        </ol>
+      </div>
+    </details>
+
+    <a href="https://www.lalal.ai/blog/difference-between-audio-formats-mp3-flac-wav-aiff-m4a-ogg/#:~:text=Since%20OGG%20is%20a%20lossy,quality%20and%20file%20size%20alike.">Different Audio Formats</a>
+    <hr>
+  </main>
+  <script>
+    // Toggle main mobile menu (hamburger icon)
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.right-nav .menu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle script
+    const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        // Only run this JS handling if we are on a mobile screen width
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const subMenu = dropdown.nextElementSibling;
+          if (subMenu) {
+            subMenu.classList.toggle('mobile-open');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

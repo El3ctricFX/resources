@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Useful Resources</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* override centering from main.css */
+    .main-content {
+      display: block !important;
+      text-align: left !important;
+      align-items: unset !important;
+      justify-content: unset !important;
+      padding: 30px 40px 60px 40px !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    .back-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #000;
+      padding: 6px 14px;
+      border-radius: 30px;
+      transition: 0.2s;
+    }
+    .back-link a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* details styling with changing arrow */
+    details {
+      background: #fff;
+      margin-bottom: 1.5rem;
+      border: 2px solid #000;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    summary {
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 0.9rem 1.5rem;
+      background: #fafafc;
+      cursor: pointer;
+      list-style: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    /* 1. Reset standard arrows for ALL categories */
+    details summary::before {
+      content: "▶" !important; 
+      display: inline-block;
+      transition: transform 0.2s ease;
+      transform: rotate(0deg); /* Sideways when closed */
+      font-size: 0.85rem;
+      margin-right: 12px;
+    }
+
+    /* 2. Rotate ONLY the active arrow when its specific container is opened */
+    details[open] > summary::before {
+      content: "▶" !important; 
+      transform: rotate(90deg) !important; /* Points down when open */
+    }
+
+    details[open] summary {
+      border-bottom-color: #000;
+      background: #fff;
+    }
+    .details-content {
+      padding: 1.2rem 1.8rem;
+      background: #fff;
+    }
+
+    .details-content details {
+      margin: 0.8rem 0;
+      border-width: 1.5px;
+    }
+    .details-content details summary {
+      font-size: 1.1rem;
+      padding: 0.6rem 1.2rem;
+      background: #f9f9ff;
+    }
+
+    /* Dropdown smooth animation */
+    details[open] > .details-content {
+      animation: slideDown 0.25s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    hr {
+      margin: 1rem 0;
+      border: none;
+      height: 1px;
+      background: #ddd;
+    }
+
+    /* Fix top-left logo link layout breaks */
+    .logo a {
+      text-decoration: none !important;
+      color: inherit !important;
+      display: inline-block !important;
+      font-weight: inherit !important;
+    }
+
+    /* Aesthetic Adjustment: Sharp Edges */
+    details, 
+    summary, 
+    .back-link a {
+      border-radius: 0px !important; 
+      box-shadow: 4px 4px 0 rgba(0,0,0,1);
+    }
+
+    @media (max-width: 768px) {
+      .main-content { padding: 20px 16px !important; }
+      .details-content { padding: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+ <nav class="nav">
+    <div class="left-nav">
+      <h1 class="logo"><a href="../../index.html" style="text-decoration: none; color: inherit;">Resources</a></h1>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+
+    <div class="right-nav">
+      <ul class="menu">
+        <li class="dropdown">
+          <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+            <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a>Production ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="../Production/videography.html">Videography</a></li>
+                <li><a href="../Production/sounddesign.html">Sound Design</a></li>
+                <li><a href="../Production/graphics.html">Graphics</a></li>
+                <li><a href="../Production/3d.html">3D</a></li>
+                <li><a href="../Production/coding.html">Coding</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a>Techy Stuff ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="privateapps.html">Private Apps</a></li>
+                <li><a href="useful-resources.html">Useful Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-rss"></i> Blog ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../blog/about.html">About Website</a></li>
+            <li><a href="../blog/gospel-related.html">God & Bible Related</a></li>
+            <li><a href="../blog/technology.html">Technology</a></li>
+          </ul>
+        </li>
+
+        <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="back-link"><a href="../../index.html">← Back to Resources</a></div>
+
+    <h2>Useful Resources</h2>
+
+    <details>
+      <summary>Media</summary>
+      <div class="details-content">
+        
+        <details>
+          <summary>Blogs & Newsletters</summary>
+          <div class="details-content">
+            <p style="color: #666; margin-bottom: 1rem;"><strong>Note:</strong> Not listed in order. The main topics are digital rights or educational topics on technology.</p>
+            <ol>
+              <li><a href="https://www.ghostery.com/blog">Ghostery Blog</a></li>
+              <li><a href="https://www.ghostery.com/privacy-digest">Ghostery Digest</a></li>
+              <li><a href="https://www.wired.com/category/security/">Wired Security</a></li>
+              <li><a href="https://www.hackers-arise.com/">Hackers Arise</a></li>
+              <li><a href="https://www.eff.org/">Electronic Frontier Foundation</a></li>
+              <li><a href="https://proton.me/blog/privacy-news">Proton Privacy News</a></li>
+              <li><a href="https://proton.me/blog/privacy-guides">Proton Privacy Guides</a></li>
+              <li><a href="https://tuta.com/blog">Tuta</a></li>
+              <li><a href="https://www.nbtv.media/newsletter">NBTV Newsletter</a></li>
+              <li><a href="https://duckduckgo.com/newsletter">DuckDuckGo</a></li>
+              <li><a href="https://marcushutchins.com/blog/">Marcus Hutchins</a> (Wannacry hacker)</li>
+              <li><a href="https://mullvad.net/en/blog">Mullvad Blog</a></li>
+              <li><a href="https://restoreprivacy.com/news-reports/">RestorePrivacy Privacy and Security News</a></li>
+              <li><a href="https://alternativeto.net/news/all/">AlternativeTo News</a></li>
+              <li><a href="https://news.itsfoss.com/">It's Foss News</a></li>
+              <li><a href="https://bitwarden.com/blog/">Bitwarden Blog</a></li>
+              <li><a href="https://cybernews.com/">cybernews</a></li>
+              <li><a href="https://stallman.org/">Richard Stallman's Personal Site</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>YouTube Channels</summary>
+          <div class="details-content">
+            <p><strong>Tech Videos (Mainly Entertainment)</strong></p>
+            <ol style="margin-bottom: 1.5rem;">
+              <li><a href="https://www.youtube.com/channel/UCi7wDE2ZTiR5QYYrUY5WhtA">CarterPcs</a></li>
+              <li><a href="https://www.youtube.com/@LinusTechTips/videos">Linus Tech Tips</a> / <a href="https://www.youtube.com/@LMGClips">LMG Clips</a></li>
+            </ol>
+            
+            <p><strong>Privacy, Internet Safety, & Tech News</strong></p>
+            <ol style="margin-bottom: 1.5rem;">
+              <li><a href="https://www.youtube.com/@techlore">Techlore</a></li>
+              <li><a href="https://www.instagram.com/0day/">0day</a> (Ryan Montgomery)</li>
+              <li><a href="https://www.youtube.com/@EFForg/videos">EFF</a> (Electronic Frontier Foundation)</li>
+              <li><a href="https://www.youtube.com/@SomeOrdinaryGamers">SomeOrdinaryGamers</a></li>
+              <li><a href="https://www.youtube.com/@MentalOutlaw/videos">Mental Outlaw</a></li>
+              <li><a href="https://www.youtube.com/@EricMurphyxyz">Eric Murphy</a></li>
+              <li><a href="https://www.youtube.com/@MalwareTechBlog/videos">Marcus Hutchins</a></li>
+            </ol>
+
+            <p><strong>Networking, Security, & Linux</strong></p>
+            <ol>
+              <li><a href="https://www.youtube.com/@davidbombal/videos">David Bombal</a></li>
+              <li><a href="https://www.youtube.com/@TechHut/videos">TechHut</a></li>
+              <li><a href="https://www.youtube.com/@NetworkChuck">NetworkChuck</a></li>
+              <li><a href="https://www.youtube.com/@ChrisTitusTech">Chris Titus Tech</a> / <a href="https://www.youtube.com/@TitusTechTalk">Titus Tech Talk</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Movies</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://www.imdb.com/title/tt2679552/">I.T.</a> (2016)</li>
+              <li><a href="https://www.themoviedb.org/movie/413052-hacker">Hacker</a> (2016)</li>
+              <li><a href="https://www.themoviedb.org/movie/449811-hacker">Hacker</a> (2018)</li>
+              <li><a href="https://www.themoviedb.org/movie/302401-snowden">Snowden</a> (2016)</li>
+              <li><a href="https://www.themoviedb.org/movie/1642-the-net?language=en-US">The Net</a> (1995)</li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Shows</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://www.themoviedb.org/tv/62560-mr-robot">Mr. Robot</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Documentaries</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://youtu.be/R8h-fPCvqAg">The Face of Anonymous</a></li>
+              <li><a href="https://www.youtube.com/watch?v=vveLaA-z3-o">Wannacry: The Marcus Hutchins Story</a></li>
+              <li><a href="https://www.youtube.com/watch?v=9g_sqKH2z4I">Edward Snowden</a></li>
+            </ol>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+
+    <details>
+      <summary>Useful Sites</summary>
+      <div class="details-content">
+        
+        <details>
+          <summary>Check if Emails have been leaked</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://haveibeenpwned.com/">Haveibeenpwned</a></li>
+              <li><a href="https://pentester.com/">Pentester</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Osint Sites (Open-Source Intelligence)</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://osint.industries/">Osint Industries</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Network Scanning</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://wigle.net">Wigle</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Other Useful Sites</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://www.passwordmonster.com/">Password Strength Meter</a></li>
+              <li><a href="https://www.ghostery.com/whotracksme/trackers">Ghostery WhoTracks.Me</a></li>
+            </ol>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+
+    <details>
+      <summary>IT Resources</summary>
+      <div class="details-content">
+        
+        <details>
+          <summary>Applications</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://www.aida64.com/">Aida64</a> — Temp check (Windows alternative available)</li>
+              <li><a href="https://www.diskgenius.com/">DiskGenius</a> — Backup Files</li>
+              <li><a href="https://crystalmark.info/en/software/crystaldiskinfo/">Crystal Disk</a> — Disk speed check</li>
+              <li><a href="https://github.com/builtbybel/control-uwp">ControlUWP</a> — Control Panel alternative</li>
+              <li><a href="https://github.com/ChrisTitusTech/winutil">WinUtil</a> — Tool from Chris Titus to debloat and remove telemetry from Windows</li>
+              <li><a href="https://easydmarc.com/">EasyDmarc</a> — Checkup on Domain & Email Security</li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Certificates</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://w3.testout.com/courseware/pc-pro">Testout PC Pro</a></li>
+              <li><a href="https://www.comptia.org/certifications/a">CompTia A+</a></li>
+              <li><a href="https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html">CCNA</a></li>
+              <li><a href="https://grow.google/certificates/it-support/">Google</a> (or view <a href="https://www.youtube.com/playlist?list=PLTZYG7bZ1u6o9sREwhYa0v1Ten-XMKXlL">Free Content without Cert</a>)</li>
+              <li><a href="https://dronetrust.com/faa-trust/">DroneTrust</a> (The Recreational UAS Safety Test)</li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Specific YouTube Videos & Playlists</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://www.youtube.com/playlist?list=PL8mG-RkN2uTyKyFTGHy05LylyN2Cz-Sa9">Linus Tech "The Last Guide You'll Ever Need"</a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLw6kwOJVj3MbMZ8B72ZgUryj8OSETC0ds">Free CCNA 200-301 Complete Practical Course v1.1</a></li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>Websites</summary>
+          <div class="details-content">
+            <ol>
+              <li><a href="https://www.netacad.com/catalogs/learn?category=course">Cisco Education</a></li>
+            </ol>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+    <hr>
+  </main>
+  <script>
+    // Toggle main mobile menu (hamburger icon)
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.right-nav .menu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle script
+    const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        // Only run this JS handling if we are on a mobile screen width
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const subMenu = dropdown.nextElementSibling;
+          if (subMenu) {
+            subMenu.classList.toggle('mobile-open');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

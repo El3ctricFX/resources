@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources — About the Website</title>
+  <title>Resources — Technology Related</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -62,7 +62,6 @@
     
     .blog-card h3 {
       font-size: 1.4rem;
-      margin-bottom: 8px;
       color: #000;
     }
     .blog-card p {
@@ -130,12 +129,11 @@
       flex-grow: 1;
       min-width: 0;
     }
-    
   </style>
 </head>
 <body>
 
- <nav class="nav">
+<nav class="nav">
     <div class="left-nav">
       <h1 class="logo"><a href="../../index.html" style="color: inherit; text-decoration: none;">Resources</a></h1>
     </div>
@@ -189,27 +187,16 @@
   <main class="main-content">
     <div class="back-link"><a href="../../index.html">← Back to Resources</a></div>
 
-    <h2>About The Website</h2>
+    <h2>Technology Related</h2>
     
     <div class="blog-list">
       
-      <a href="articles/about website/10-20-24.md" class="blog-trigger">
+      <a href="#" class="blog-trigger">
         <div class="blog-card">
           <div>
-            <h3>What is this website trying to accomplish?</h3>
-            <p>Within this article you're able to see what im trying to accomplish and do with this website.</p>
+            <h3>No post yet</h3>
           </div>
-          <div class="post-date">Oct 20th</div>
-        </div>
-      </a>
-
-      <a href="articles/about website/10-27-24.md" class="blog-trigger">
-        <div class="blog-card">
-          <div>
-            <h3>How i write my articles with HTML & Markdown?</h3>
-            <p>Within this article i talk about how through a script i found online i write my articles with html and markdown.</p>
-          </div>
-          <div class="post-date">Oct 27th</div>
+          <div class="post-date">N/A</div>
         </div>
       </a>
 
@@ -253,6 +240,7 @@
                 font-size: 85% !important;
               }
               
+              /* The Quote Block Adjustment */
               .markdown-body blockquote {
                 padding: 10px 15px !important;
                 color: #555 !important;
@@ -300,7 +288,11 @@
     triggers.forEach(trigger => {
       trigger.addEventListener('click', (e) => {
         e.preventDefault(); 
-        const markdownPath = trigger.getAttribute('href'); 
+        const markdownPath = trigger.getAttribute('href');
+        
+        // Prevent loading nothing if the link is just a placeholder #
+        if (markdownPath === "#") return;
+
         zeroMdElement.setAttribute('src', markdownPath);
         zeroMdElement.render(); 
         overlay.classList.add('active'); 

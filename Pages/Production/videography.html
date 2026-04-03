@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Videography</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* override centering from main.css */
+    .main-content {
+      display: block !important;
+      text-align: left !important;
+      align-items: unset !important;
+      justify-content: unset !important;
+      padding: 30px 40px 60px 40px !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    .back-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #000;
+      padding: 6px 14px;
+      border-radius: 30px;
+      transition: 0.2s;
+    }
+    .back-link a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* details styling with changing arrow */
+    details {
+      background: #fff;
+      margin-bottom: 1.5rem;
+      border: 2px solid #000;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    summary {
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 0.9rem 1.5rem;
+      background: #fafafc;
+      cursor: pointer;
+      list-style: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    /* 1. Reset standard arrows for ALL categories (1st, 2nd, 3rd+ row) */
+    details summary::before {
+      content: "▶" !important; 
+      display: inline-block;
+      transition: transform 0.2s ease;
+      transform: rotate(0deg); /* Sideways when closed */
+      font-size: 0.85rem;
+      margin-right: 12px;
+    }
+
+    /* 2. Rotate ONLY the active arrow when its specific container is opened */
+    details[open] > summary::before {
+      content: "▶" !important; 
+      transform: rotate(90deg) !important; /* Points down when open */
+    }
+
+    details[open] summary {
+      border-bottom-color: #000;
+      background: #fff;
+    }
+    .details-content {
+      padding: 1.2rem 1.8rem;
+      background: #fff;
+    }
+
+    .details-content details {
+      margin: 0.8rem 0;
+      border-width: 1.5px;
+    }
+    .details-content details summary {
+      font-size: 1.1rem;
+      padding: 0.6rem 1.2rem;
+      background: #f9f9ff;
+    }
+
+    /* Dropdown smooth animation (keeps the UI fast and snappy) */
+    details[open] > .details-content {
+      animation: slideDown 0.25s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .resource-table, table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 2px solid #000;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 12px;
+      vertical-align: top;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    hr {
+      margin: 1rem 0;
+      border: none;
+      height: 1px;
+      background: #ddd;
+    }
+    code {
+      background: #f2f2f2;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .topnav {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .main-content { padding: 20px 16px !important; }
+      .details-content { padding: 1rem; }
+    }
+
+    /* Aesthetic Adjustment: Sharp Edges */
+    details, 
+    summary, 
+    .back-link a {
+      border-radius: 0px !important; 
+      box-shadow: 4px 4px 0 rgba(0,0,0,1); /* High-contrast sharp shadow */
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+    <div class="left-nav">
+      <h1 class="logo"><a href="../../index.html" style="text-decoration: none; color: inherit;">Resources</a></h1>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+
+    <div class="right-nav">
+      <ul class="menu">
+        <li class="dropdown">
+          <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+            <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a>Production ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="videography.html">Videography</a></li>
+                <li><a href="sounddesign.html">Sound Design</a></li>
+                <li><a href="graphics.html">Graphics</a></li>
+                <li><a href="3d.html">3D</a></li>
+                <li><a href="coding.html">Coding</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a>Techy Stuff ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="../Tech stuff/privateapps.html">Private Apps</a></li>
+                <li><a href="../Tech stuff/useful-resources.html">Useful Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-rss"></i> Blog ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../blog/about.html">About Website</a></li>
+            <li><a href="../blog/gospel-related.html">God & Bible Related</a></li>
+            <li><a href="../blog/technology.html">Technology</a></li>
+          </ul>
+        </li>
+
+        <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="back-link"><a href="../../index.html">← Back to Resources</a></div>
+
+    <h2>Videography Resources</h2>
+
+    <!-- Codec Resources (unchanged, outside Gaming) -->
+    <details>
+      <summary>Codec Resources</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://codecguide.com/links.htm">Codec Guide: Links</a></li>
+          <li><a href="https://codecguide.com/download_k-lite_codec_pack_mega.htm">K-lite Mega codec Pack</a></li>
+          <li><a href="https://github.com/onionware-github/OnionMedia">OnionMedia</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <!-- Gaming category - now contains Footage, Resources, and Commands -->
+    <details>
+      <summary>Gaming</summary>
+      <div class="details-content">
+        <ol>
+          <hr>
+
+          <!-- Footage | Demos & Pre Recs (original) -->
+          <Details>
+            <summary>Footage | <b>Demos & Pre Recs</b></summary>
+            <div class="details-content">
+              <ol>
+                <hr>
+
+                <!-- Bo2 -->
+                <Details>
+                  <summary>Bo2</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr>
+                        <td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZziRuzNf9YV8IZbAeD4kElkL">My Playlist</a> / <a href="https://www.youtube.com/playlist?list=PLq7GentbayToPp4FnWR2B9R9PuHO__qDi">Axis</a></td>
+                        <td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3Zzgr1afKoceq6E-ixM_NzPSH">My Playlist</a> / <a href="https://www.youtube.com/playlist?list=PLZVBKlmRJUPWluU6v_stTyAP83NuyyY8G">Airyz</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- Cod4 -->
+                <Details>
+                  <summary>Cod4</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZziGZ6YY_enLqOy5xTOFm1nh">My Playlist</a></td><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzgFp58K9-ONcfiJJUufk8py">My Playlist</a></td></tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- Bo3 -->
+                <Details>
+                  <summary>Bo3</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3Zzj0ggGIL0doMIii6vPGyWp8">My Playlist</a></td><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzhRJTfOY2y4oZoP5DaUZMPN">My Playlist</a></td></tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- MW2 -->
+                <Details>
+                  <summary>MW2</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzgVjhCFUjmXmMFudbjjbO8o">My Playlist</a></td><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzgHCfAXSpGI360-1ckPEdEw">My Playlist</a></td></tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- CS:GO -->
+                <Details>
+                  <summary>CS:GO</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3Zzjm3U9JQh-WT0rMA2moWb6W">My Playlist</a></td><td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3Zzh-zIPeVu2ObmPPA5hSIXVq">My Playlist</a> / <a href="resources/videography/demodoc/democdoc.html">Demo Doc</a></td></tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- Valorant -->
+                <Details>
+                  <summary>Valorant</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr>
+                        <td>
+                          <a href="https://drive.google.com/drive/folders/1KLPFeKitaIi9btlSZXZQno7fGUTiLpry">Miniyata Fragshow</a> (<a href="https://youtu.be/QZM7pc8lPic">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1HWDRvO6XWfD8Tc0iIkxoIL-xAolzHJNT">Hnbn</a> (<a href="https://youtu.be/hv9uhwNrdOU">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1kkhn79rX1WwBK8rMjCa3kK_uvB7kIgRu">crucible clips</a><br>
+                          <a href="https://drive.google.com/drive/folders/1BoSxdy-pFp3qiPv6wKvumLUYd8o7gq1h">Anima</a><br>
+                          <a href="https://drive.google.com/drive/u/1/folders/1tOxTnLIYL6Dxmph0Bxzxb6CEB15qXyZ2">Random</a><br>
+                          <a href="https://drive.google.com/drive/folders/1naJM51fExGj0MpfyPLQsWPC7Hw0YTdOi">Random</a><br>
+                          <a href="https://drive.google.com/drive/folders/1_JgRivPRRSnsCfySpiqvNWlbKMF0eQKK">Random</a><br>
+                          <a href="https://drive.google.com/drive/folders/1OwBfnBZtk9Wt0GNQ8LDN57OVRVectetW">Random</a><br>
+                          <a href="https://drive.google.com/drive/folders/1naJM51fExGj0MpfyPLQsWPC7Hw0YTdOi">Ikura clips</a><br>
+                          <a href="https://drive.google.com/drive/folders/1fFv6zAZmHEF-sZJuZGC1MmG0SPh61Bcu">Horaec</a><br>
+                          <a href="https://drive.google.com/drive/folders/1tSAZqP9PzsBu8E9DH2pdZqOWETidFZv2?usp=sharing">Aerobe EC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1MNSnN31mrum_IzziG_MAkuTO8nyd1Ube">Zee9x</a><br>
+                          <a href="https://drive.google.com/drive/u/0/folders/1Q-yQT82q3IfROffqqzYLkuk3bEhuH1B2">Random HC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1pvDyfLzB8fh9sT73IQWh9aRBafCz9t5D">Ultec3</a><br>
+                          <a href="https://drive.google.com/drive/folders/1jyFqLFnYOGkc7_ZJ5mF0TavsjSlWX_Hi">Shizuka ec</a><br>
+                          <a href="https://www.youtube.com/watch?v=Zq6gpd3FqX0">Yams | Valorant Edit</a><br>
+                          <a href="https://drive.google.com/drive/folders/13RwdNknEQSytVKZy5cMtfYFXRKkLMJOp">Practice</a><br>
+                          <a href="https://drive.google.com/drive/folders/1GiWjE7GaiFsHfg6JgGejcL9TP5mXudev">Beside you</a> (<a href="https://youtu.be/92MEWLJjjSA">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1YaC8CWK681b0hmTyLpHNYgT5k-zAzIaR">Jackie Brown</a><br>
+                          <a href="https://drive.google.com/drive/folders/18tfte4Rqn9zgy3_PDJ7ggUnkC_TNF523">Airikan</a><br>
+                          <a href="https://drive.google.com/drive/folders/1YCmgOvILJITRCCRUT3bD7KZGJsWu1adW">Im Good Boy</a>
+                        </td>
+                        <td>
+                          <a href="https://drive.google.com/drive/folders/16g8T_ybTiv7PO8OFMX3L3THOpAnybAgV">Arcadia</a> (<a href="https://youtu.be/yRSpVa5P77s">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1LFxIqr8vucpQyHBGsDg4qzZBeS2D1EH4">Wish</a> (<a href="https://youtu.be/LWNOgbR2JT4">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1Ebk6PJUJf8q1sWt9RvyDu3edWDTwOd7W">Sweet Tooth</a> (<a href="https://www.youtube.com/watch?v=WWlRqnvnyOk">Video</a>)
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- Apex -->
+                <Details>
+                  <summary>Apex</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr><td colspan="2"><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3Zzj_Pn3g2QVekFPpUkY50Upw">Mine</a></td></tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- Minecraft -->
+                <Details>
+                  <summary>Minecraft</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr>
+                        <td><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3Zzj63IE1eF-O1KztgqBDV36g">My Youtube Playlist</a><br><a href="https://drive.google.com/file/d/1Pdy97sgha8YgjqFkY-N-_o1vzh_WWLXr/view">HyperHC</a> <b>(Compressed)</b><br><ol>Password: fatimasex1991</ol></td>
+                        <td><a href="https://drive.google.com/drive/folders/162UOszhvI2pu80b30weU8qfrpjgWEMqN">Uni23</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                </Details>
+
+                <!-- Dancing -->
+                <details>
+                  <summary>Dancing</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr><td colspan="2"><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzjVQm1IqZJstopdlN8gbqEb">Playlist</a> / <a href="https://www.youtube.com/shorts/BzzPdtGewjI">Random Short</a></td></tr>
+                    </table>
+                  </div>
+                </details>
+
+                <!-- Genshin Impact -->
+                <details>
+                  <summary>Geshin Impact</summary>
+                  <div class="details-content">
+                    </table>
+                     
+                      <tr><td colspan="2"><a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzjeIafH5ySWnK3PyCv2JXKC">Playlist</a></td></tr>
+                    </table>
+                  </div>
+                </details>
+
+                <!-- AMV -->
+                <details>
+                  <summary>AMV</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Clips</th><th>Demos</th></tr>
+                      <tr><td colspan="2"><a href="https://www.youtube.com/playlist?list=PLi4K6autuHoEpFyPxthDoE1pIFBSyIjAZ">Previews</a> - <a href="https://ringwitdatwixtor.com/">Downloads</a></td></tr>
+                    </table>
+                  </div>
+                </details>
+
+                <!-- Fortnite -->
+                <DETAILS>
+                  <summary>ForkKnife</summary>
+                  <div class="details-content">
+                    <table>
+                      <tr><th>Trickshots</th><th>Clip Packs (All)</th><th>Pre-Recs</th></tr>
+                      <tr>
+                        <td>
+                          <a href="https://drive.google.com/drive/folders/1tW_dAyQTi07gKoXKTMHoGvDMyMHDHaJP">Agent</a><br>
+                          <a href="https://drive.google.com/drive/folders/1TCBivNHAZx1lDIpGPR2DrSwfFH0U6s0K">Sprezz</a><br>
+                          <a href="https://drive.google.com/drive/folders/1qRVXKKHpu62ob0As6nwJEL55end89Cu5">Retro</a><br>
+                          <a href="https://drive.google.com/drive/folders/1vd5P6AxPfQLftelP9LUXPEeV_7y7uoHQ">Amity1kRC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1uXOvN39nH5oBUBoBHGQiNxsLsxgjFsSr">Norcal EC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1F2Ly8mrpbRTxbieLKIzX9hF_aYFy8Fgj">JoshyyECV2</a><br>
+                          <a href="https://drive.google.com/drive/folders/1LWjU1cMGSz_eSMURl47BmGxon3fjZohy">TCEC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1HfnyQJ5WvvC-Q4hktjcMZZXZjng0Y21t">hora ec</a><br>
+                          <a href="https://drive.google.com/drive/folders/1bfbl3YiDXUKBVS4mll6bJzw8kJUUwJWw">Ultec3</a><br>
+                          <a href="https://drive.google.com/drive/u/3/folders/1yMrPCVuo7IqaWul56NpEgPLUqV510jrR">random hc</a>
+                        </td>
+                        <td>
+                          <a href="https://drive.google.com/drive/folders/1xyTYabq_l0ss4IP_nBxoYBBY7yYp7NXn">Honor RC</a><br>
+                          <a href="https://drive.google.com/drive/folders/10r9XJoPgePDc-k-ly0uPp1E-a5TylmdB">VXSEC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1GqTgnNyG5a88_1eXwpuNYuEbr2c2PLU8">T1 Nate</a><br>
+                          <a href="https://drive.google.com/drive/mobile/folders/134Pn5VFtgWmcghf4w7VAVoRZTHOHxcIO?usp=sharing">Brady X Cxltures</a><br>
+                          <a href="https://drive.google.com/drive/folders/1MpqlGJsBJr7YnrflPM116avSsNFnijgo">Raider 464</a><br>
+                          <a href="https://drive.google.com/drive/u/0/folders/1FxPjMpxGm-0ZoMBTfeXIB13W0omfVPJ5">GamerBicepsEC</a><br>
+                          <a href="https://drive.google.com/drive/folders/1sAOWq9khONB1vYyssnQHgNO_9LuhbXwn">Random Stew Twitter</a><br>
+                          <details>
+                            <summary>Overtime</summary>
+                            <div class="details-content">
+                              <a href="https://drive.google.com/drive/folders/1bPd_7FfW7re2iMYp941oDqm-S7V10QH-">Pham</a><br>
+                              <a href="https://drive.google.com/drive/folders/1ViXOw7ClXHoHs0ueJfnypFkeNvVL_35o">Roan</a><br>
+                              <a href="https://drive.google.com/drive/folders/1KQQxg6Gl_0M7C0PosBnXQdVas8S6hibY">Slay</a><br>
+                              <a href="https://drive.google.com/drive/folders/1opnRPiXxITvNRylfpkRMvzMZ8pQasVZz">Vynla</a>
+                            </div>
+                          </details>
+                          <a href="https://drive.google.com/drive/u/0/folders/1tm8Dmr-cKVr_UB9UFFpLpy9gHEaM_6-v">Lannec</a><br>
+                          <a href="https://drive.google.com/drive/folders/1TysuVDPcG_mnlaJ6cczIJsyPoli3ZJRE">OG FN</a> (<a href="https://www.youtube.com/watch?v=CSRWtCrveKw">Video</a>)
+                        </td>
+                        <td>
+                          <a href="https://drive.google.com/drive/folders/1hcaz7IeEji60Uj50zGfv5QdIoGU87gaK">SLHC #2</a><br>
+                          <a href="https://drive.google.com/drive/folders/1vP_Ubn7Vi8RVDDVcjc5old4atJWIyl5o">SLHC #1</a><br>
+                          <a href="https://drive.google.com/drive/folders/1mxnsncVct74bq4C_q_p2D-nOIRNbXGpR">Austin HC #1</a><br>
+                          <a href="https://drive.google.com/drive/u/0/folders/1ZaQTGL-JF3YPFn2V7EVV67IHSANgsJl7">Shill HCs</a><br>
+                          <a href="https://drive.google.com/drive/u/0/folders/10w42vKcjx5gVy9tiCP641hSNTFUrLJt-">Random #1</a><br>
+                          <a href="https://drive.google.com/drive/u/0/folders/1HCg8BZBCOvkqoX2QfMRXzEDyC2WljtGW">Random #2</a><br>
+                          <a href="https://drive.google.com/drive/mobile/folders/1wZIRwYt8dyDEbCWE7AejSyQtwKduwSUe?usp=sharing">Random #3</a><br>
+                          <a href="https://drive.google.com/drive/folders/16QRWphlWri1OAGwQzVeVts4cH5J3cXzt">Rubbin off the paint</a><br>
+                          <a href="https://www.mediafire.com/file/m1md9fe47xy5jxv/YES_OR_YES_%2528clips_in_desc%2529.rar/file">Yes or Yes</a><br>
+                          <a href="https://drive.google.com/drive/folders/1oBV42xkcAh-3mlasHLiF1GfSlYMNXaH8">Half off</a> (<a href="https://youtu.be/48xAL5zLjh8">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/15LjD2ihG-W2c3cxtPOcnbaRhTe8PbnqX">Chances</a> (<a href="https://youtu.be/qtvFHwpZDVY?t=1">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1nBuLvORSawuqhK01B3evISriiNO0JEyT">Ikura 3hc</a> (pass in <a href="https://youtu.be/HnPX700D9EQ">video</a>)<br>
+                          <a href="https://mega.nz/file/dAJzHQRL#Qd67K_AzySji0SJLKpPHA8_M3EGG1gh7eRxn-0xe440">Atomic Girl</a> (<a href="https://youtu.be/VuGigE0XKiA">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1f7NfaVE4_c-atxnaukAQgIEFOHVYXLFB">8Bit</a> (<a href="https://youtu.be/Ge592s_LQ68">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1EK6orTrSS_yI19pAqcgFq3-BQsjF17cY">Roses</a> (<a href="https://youtu.be/le8J9NR7f2g">Video</a>)<br>
+                          <a href="https://mega.nz/file/lFpAlQSR#YlfJpNewtWeXE-yUPILEpAOXjasvSWpryAR8_wOlG3U">Skylights</a> (<a href="https://youtu.be/NxD1lQZaXxQ">Video</a>)<br>
+                          <a href="https://mega.nz/file/ZQ5HEaaR#cDVPik08NqRUDHKNkthdwqXW0ycVxAET1G2c8DPL4q4">Black Soap</a> (<a href="https://youtu.be/It5wKSG7FhU">Video</a>)<br>
+                          <a href="https://mega.nz/file/YQQGQZKR#n06nOuQsCPhUP56bOvmy1MzNTUeIPilWvVAjpe1ryq0">Fashion Art</a> (<a href="https://youtu.be/LdPHFwbJ7K4">Video</a>)<br>
+                          <a href="https://mega.nz/folder/a1sCXaQQ#xAUi-NaSjQ5KJVzRjNQc_A">Mine</a> (<a href="https://youtu.be/EBrAJ36X1uQ">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1diMRWO2JTMssu2fZQEtXlopIIyBKwZpT">Hallucinate</a><br>
+                          <a href="https://drive.google.com/drive/folders/1svFmG5nsXsUo5KeiLVKSxE6XBLUgsWaf">Lonely</a> (<a href="https://www.youtube.com/watch?v=z2RTuvbjpsk">Video</a>)<br>
+                          <a href="https://drive.google.com/drive/folders/1YULwm7NTWFBVk5Xr_7M9AxHAlG4-5ygq">Feel Special</a> (<a href="https://www.youtube.com/watch?v=bMKY0PMTvQw">Video</a>)
+                        </td>
+                      </tr>
+                    </table>
+                    <hr>
+                    <a href="https://docs.google.com/document/d/1SZDhPXFxBli3bIqVJ9yPS4LlsCrVxpNGwv2IPXk7m-8/edit">Random Acronix Clip Dock</a>
+                  </div>
+                </DETAILS>
+              </ol>
+            </div>
+          </Details>
+
+          <!-- ========== RESOURCES SECTION (moved inside Gaming) ========== -->
+          <details>
+            <summary>Resources</summary>
+            <div class="details-content">
+              <ol>
+                <hr>
+
+                <!-- Cod4 -->
+                <details>
+                  <summary>Cod4</summary>
+                  <div class="details-content">
+                    <ol>
+                      <hr>
+                      <a href="https://github.com/kruumy/cod4-editing-mod">Editing Mod</a><br>
+                      <a href="https://codmvm.com/">CodMVM Launcher</a><br>
+                      IW3XO Homepage (<a href="https://xoxor4d.github.io/projects/iw3xo/">Guide</a>)<br>
+                      <a href="https://github.com/xoxor4d/iw3xo-dev/releases">Dvar List Github</a>
+                      <hr>
+                    </ol>
+                  </div>
+                </details>
+
+                <!-- Bo2 -->
+                <details>
+                  <summary>Bo2</summary>
+                  <div class="details-content">
+                    <ol>
+                      <hr>
+                      (<a href="https://youtu.be/vY-Fb_B1JaM">Bo2 Recording Tutorial</a>)
+                      <hr>
+                      T6TC (<a href="https://ardiium.gumroad.com/l/t6tc?layout=profile">Beta Texture Changer</a>)<br>
+                      <a href="https://www.mediafire.com/file/6xj8wuc26o0kf3w/Redacted_LAN.7z/file">Redacted</a><br>
+                      <a href="https://discord.com/invite/nuxtauNV9D">Team A Discord</a><br>
+                      <ul>
+                        <hr>
+                        <li><a href="https://airyz.xyz/p/t6-advanced-dolly/">Advanced Dolly cam</a></li>
+                        <li><a href="https://airyz.xyz/p/t6gr/">T6GR</a></li>
+                        <li>V4 Console is in the discord</li>
+                        <hr>
+                      </ul>
+                      <a href="https://gmzorz.com/bo2dvars.html">Dvars & Commands</a>
+                      <hr>
+                    </ol>
+                  </div>
+                </details>
+
+                <!-- Bo3 -->
+                <details>
+                  <summary>Bo3</summary>
+                  <div class="details-content">
+                    <ul>
+                      <hr>
+                      <a href="https://airyz.xyz/categories/black-ops-iii/">Aiyrz's Resources</a>
+                      <hr>
+                      <ul>
+                        <li><a href="https://airyz.xyz/p/boiii-for-editing/">Bo3 Guide for Demos and stuff</a></li>
+                        <li><a href="https://airyz.xyz/p/t7-advanced-dolly/">T7 Advanced Dolly Cams</a></li>
+                        <li><a href="https://airyz.xyz/p/bo3-tool/">Bo3 Tool</a></li>
+                      </ul>
+                      <hr>
+                      <a href="https://youtu.be/RThmDc8gbzY">How to record Black ops 3 (Boiii)</a> (tutorial on how to actual record povs and cines)<br>
+                      <a href="https://youtu.be/l08k6rc6qa4">BOIII editing tutorial</a> (How to setup the game files and demos etc..)
+                      <hr>
+                    </ul>
+                  </div>
+                </details>
+
+                <!-- CS:GO -->
+                <details>
+                  <summary>CS:GO</summary>
+                  <div class="details-content">
+                    <ol>
+                      <hr>
+                      <a href="https://www.advancedfx.org/download/">HLAE</a><br>
+                      <a href="https://developer.valvesoftware.com/wiki/List_of_Counter-Strike:_Global_Offensive_console_commands_and_variables">Cvars & Commands</a><br>
+                      <a href="https://github.com/advancedfx/advancedfx/issues/199">Recording Demos</a><br>
+                      <details>
+                        <summary>Different Info Stuff idk</summary>
+                        <div class="details-content">
+                          <hr>
+                          <ol>
+                            <a href="https://totalcsgo.com/commands">Command List</a><br>
+                            <a href="https://github.com/advancedfx/advancedfx/wiki/Other-software">Related Software</a><br>
+                            <a href="https://github.com/advancedfx/advancedfx/wiki/Source%3ACommands">Source Commands</a><br>
+                            <a href="https://github.com/advancedfx/advancedfx/wiki/Tutorials">Tutorials</a><br>
+                            <a href="https://github.com/advancedfx/advancedfx/wiki/GoldSrc%3ACommands">GoldSrc:Commands</a>
+                          </ol>
+                        </div>
+                      </details>
+                      <hr>
+                    </ol>
+                  </div>
+                </details>
+
+                <a href="https://reshade.me/">Reshade</a>
+                <hr>
+              </ol>
+            </div>
+          </details>
+
+          <!-- ========== COMMANDS SECTION (moved inside Gaming) ========== -->
+          <details>
+            <summary>Commands</summary>
+            <div class="details-content">
+              <ol>
+                <hr>
+
+                <!-- Bo2 Commands -->
+                <details>
+                  <summary>Bo2</summary>
+                  <div class="details-content">
+                    <table class="resource-table">
+                      <tr><td width="2%"><b>Main Commands</b></td></tr>
+                      <tr>
+                        <td>
+                          <b>cg_Fov #</b>  // Fov<br>
+                          <b>t6gr_Fps #</b>  // fps<br>
+                          <b>T6gr_stop</b><br>
+                          <b>T6gr_set_end</b><br><br>
+                          <hr>
+                          I won't be discussing all the config commands here is a tutorial for that "<a href="https://www.youtube.com/watch?v=Xb1tTqCOwPw&t=95s">Airyz T6gr Streams</a>"  // <a href="http://gmzorz.com/bo2dvars.html">all dvars</a><br>
+                          <hr>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </details>
+
+                <!-- CodMVM Commands -->
+                <details>
+                  <summary>CodMVM Commands (Anything with the <a href="https://codmvm.com/launcher">Launcher</a>)</summary>
+                  <div class="details-content">
+                    <table class="resource-table">
+                      <tr><th><u>Main Commands</u></th><th><u>Recording Your own demos</u></th></tr>
+                      <tr>
+                        <td>
+                          <b>CG_Draw2d 0</b>  // Removes hud<br>
+                          <b>CL_AviDemo ( input FPS )</b> // Records just default layer<br>
+                          <b>MVM_Streams_FPS ( input fps )</b> // Records everything ( Depth, GS etc )<br>
+                          <b>CG_Fov ( in put fov )</b>  // Changes Field of view<br>
+                          <b>Exec ( Name )</b>   // Executes CFG / Config<br>
+                          <b>Timescale ( # )</b>  // Speed of clip aka timescale
+                        </td>
+                        <td>
+                          <b>Devmap ( name of map )</b> // opens up a map to record clips<br>
+                          <b>Record ( Name )</b> // Starts the record for the demo<br>
+                          StopRecord<br>
+                          <b>Give ( <a href="https://www.cod4central.com/cod4-weapons-chart.php">Weapon</a> )</b><br>
+                          <b>G_Gametype</b><br>
+                          <b>scr_war_playerrespawndelay 100</b><br>
+                          <b>SV_Fps #</b>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </details>
+
+                <!-- HLAE (CS:GO) -->
+                <details>
+                  <summary>HLAE (CS:GO)</summary>
+                  <div class="details-content">
+                    <table class="resource-table">
+                      <tr align="left">
+                        <td width="2%">
+                          <b>Main Commands</b> <hr>
+                          <b>CL_drawhud 0</b>  // Removes Scope<br>
+                          <b>Crossair 0</b> // Removes Crosshair<br>
+                          <b>cl_drawhud_force_deathnotices -1</b> // Removes Kill Feed<br>
+                          <b>cl_draw_only_deathnotices 1</b>  // Removes hud<br>
+                          <b>Mirv_Fov</b> // changes fov<br>
+                          <b>Demo_gototick ( # )</b><br>
+                          <b>Host_framerate ( # )</b><br>
+                          <b>Exec afx/updateworkaround</b><br>
+                          <b>Mirv_streams add normal ( Name )</b><br>
+                          <b>Mirv_streams edit Name Settings Streams</b><br>
+                          <b>Mirv_streams record start</b><br>
+                          <b>Mirv_streams record end</b><br>
+                          <hr>
+                          mirv_streams settings add ffmpeg Streams "-c:v libx264 -preset ultrafast -crf 5 {QUOTE}{AFX_STREAM_PATH}\video.mp4{QUOTE}"
+                          <hr>
+                          <b>Creates mp4 format for streams</b>
+                          <hr>
+                          <b>Mirv_campath draw enabled 1</b><br>
+                          <b>Mirv_streams settings print</b><br>
+                          <b>Mirv_campath enable 1</b><br>
+                          <b>Mirv_campath add</b><br>
+                          <b>Mirv_campath print</b><br>
+                          <b>Mirv_input camera</b><br>
+                          <b>Mirv_campath select</b><br>
+                          <b>Mirv_campath start</b><br>
+                          <b>Mivr_campath end</b><br>
+                          <hr>
+                          <a href="https://youtu.be/8cpIzNP895A">My Tutorial</a> / <a href="https://www.youtube.com/playlist?list=PLK0aOCQylu_WGow_HBoIsNZ4xi9vq4bca">Alan Gaming Tutorials</a> (useful tutorials are #60, #66, #52)
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </details>
+              </ol>
+            </div>
+          </details>
+
+        </ol>
+      </div>
+    </details>
+
+    <!-- ========== REMAINING SECTIONS (outside Gaming, same as original) ========== -->
+
+    <!-- Recording Software -->
+    <details>
+      <summary>Recording Software</summary>
+      <div class="details-content">
+        <ol>
+          <a href="https://fraps.com/">Fraps</a><br>
+          <a href="https://exkode.com/dxtory-features-en.html">Dxtory</a><br>
+          <a href="https://obsproject.com/">OBS</a>
+        </ol>
+      </div>
+    </details>
+
+    <!-- PDF's -->
+    <details>
+      <summary>Pdf's ( idk how good they are but oh well )</summary>
+      <div class="details-content">
+        <ol>
+          <hr>
+          <a href="https://fotozcech.cz/wp-content/uploads/2015/11/scriptui-2-8.pdf">ScriptUI-2.8</a><br>
+          <a href="https://helpx.adobe.com/pdf/after_effects_reference.pdf">After EFfects</a>
+          <hr>
+        </ol>
+      </div>
+    </details>
+
+    <!-- Playlist -->
+    <details>
+      <summary>Playlist</summary>
+      <div class="details-content">
+        <ol>
+          <details>
+            <summary>Favorite Playlist</summary>
+            <div class="details-content">
+              <ol>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzhEf92XQ_YrgJTFyMLQLiM1">Main</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzgEnquD2NSwfQ4ER4gjl1V5">Cod</a> ( outdated asf )<br>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzhWhylgP2YVHnC_YIl65hrj">Minecraft</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzhFzmgJTPY1CRFFfCXkp788">CS:GO</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzgWRENIEwAgM3tncf4PwNdu">Rocket League</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzjKICNeC5I5JoLi-lBvuTiD">Apex</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLEwLXCYh3ZzgmDpWNPNAwTxtUUO-b1JGL">Twice</a><br><br>
+              </ol>
+            </div>
+          </details>
+          <a href="https://youtube.com/playlist?list=PLEwLXCYh3ZziKzXRdvqu9Ppd49JVcTwCw">Useful Playlist</a>
+        </ol>
+      </div>
+    </details>
+
+    <!-- Downloads -->
+    <details>
+      <summary>Downloads</summary>
+      <div class="details-content">
+        <ol>
+          <a href="https://prodesigntools.com/tag/cc+ddl">Previous After Effects Versions</a> (<a href="https://www.youtube.com/watch?v=UpsTroy64JM">Video</a>)<br>
+          <a href="https://payhip.com/b/NkwK">Romar Overlay & Sounds Pack</a> <b>(FREE)</b>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>Media Downloaders</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://ffmpeg.org/">FFmpeg</a></li>
+          <li><a href="https://github.com/onionware-github/OnionMedia">OnionMedia</a></li>
+          <li><a href="https://github.com/o7q/MediaDownloader">o7q/MediaDownloader</a></li>
+          <li><a href="https://github.com/blackjack4494/yt-dlc">yt-dlc</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>Media Converters</summary>
+      <div class="details-content">
+        <ol>
+          <li><a href="https://ffmpeg.org/">FFmpeg</a></li>
+          <li><a href="https://github.com/onionware-github/OnionMedia">OnionMedia</a></li>
+          <li><a href="Downloads/ProRec.zip">Kruumy's BetterProRec</a></li>
+          <li><a href="https://www.shutterencoder.com/">Shutter Encoder</a></li>
+          <li><a href="https://sourceforge.net/projects/vdfiltermod/">Virtual Dub</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <a href="aeshortcut.html">After Effects Shortcut Document</a><br>
+    <a href="https://runwayml.com/">Runway</a> <b>(AI)</b><br>
+    <a href="https://www.google.com/earth/studio/">Google Earth Studio</a> <b>(Cinema System of the world)</b>
+  </main>
+  <script>
+    // Toggle main mobile menu (hamburger icon)
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.right-nav .menu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle script
+    const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        // Only run this JS handling if we are on a mobile screen width
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const subMenu = dropdown.nextElementSibling;
+          if (subMenu) {
+            subMenu.classList.toggle('mobile-open');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

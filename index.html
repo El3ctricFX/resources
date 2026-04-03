@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
 
-    <title>Resources</title>
-    <link rel="stylesheet" href="scripts/CSS.css">
-    <link rel="stylesheet" href="scripts/cross.css">
-    <link rel="stylesheet" href="scripts/bottomnav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
-
-  </head>
-
-  <body>
-    <div class="topnav">
-      <a href="https://worship.pages.dev/" id="cross"><i class="fa-solid fa-cross"></i> &nbsp;Jesus &nbsp;<i class="fa-solid fa-cross"></i></a>
-      <a href="Pages/blog.html"><i class="fa-solid fa-book"></i>&nbsp; Blog</a>
-      <a href="Pages/resources.html">Resources</a>
-      <a href="Pages/downloads.html"><i class="fa-solid fa-download"></i>&nbsp;Public Downloads</a>
-      
-      <h3>Resources</h3>
+<body>
+  <nav class="nav">
+    <div class="left-nav">
+      <h1 class="logo">Resources</h1>
     </div>
-    
-    <p class="mainpage">Welcome To Resources it is a random website where i post my configuration files and just random cool stuff and educational resources for everyone to use.</p>
 
-  
-    
+    <div class="menu-toggle" id="mobile-menu" style="display: none;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-<p class="bottommainpage">If you would like to contribute here is the <a href="https://github.com/El3ctricFX/resources">Source Code</a> and if you want to make it easier for me (Then submit through <a href="https://github.com/El3ctricFX/resources/pulls">Pull Request</a> on Github) or if you just have a suggestion you can submit it on the <a href="https://github.com/El3ctricFX/resources/issues">Issues</a> page as a Feature Request and ill review it</p>
-
-<p>
-  <a href="https://github.com/El3ctricFX/resources/issues">Things i plan to change</a> / <a href="https://github.com/El3ctricFX/resources/blob/main/CHANGELOG.md">Change Log</a>
-</p>
-
-
-<!----------------------------------------------------------------------------------------------------------->
-
-<!------------------------------------------------ Shortcuts ------------------------------------------------>
-
-<!----------------------------------------------------------------------------------------------------------->
-
-
-<b>
-  <details>
-  <summary>Shortcuts</summary>
-    <div>
-      <hr>
-      <ul>
-        <li>
-          <a href="Pages/resources/Production/Tech.html">Techy Stuff</a> / <a href="Pages/resources/Production/resources/Techy Shit/switch/switch.html">Reasons to switch to private apps</a>
+    <div class="right-nav">
+      <ul class="menu">
+        <li class="dropdown">
+          <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+            <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+          </ul>
         </li>
-        <li>
-          <a href="Pages/resources/product.html">Production</a>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a>Production ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="./Pages/Production/videography.html">Videography</a></li>
+                <li><a href="./Pages/Production/sounddesign.html">Sound Design</a></li>
+                <li><a href="./Pages/Production/graphics.html">Graphics</a></li>
+                <li><a href="./Pages/Production/3d.html">3D</a></li>
+                <li><a href="./Pages/Production/coding.html">Coding</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a>Techy Stuff ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="./Pages/Tech stuff/privateapps.html">Private Apps</a></li>
+                <li><a href="./Pages/Tech stuff/useful-resources.html">Useful Resources</a></li>
+              </ul>
+            </li>
+          </ul>
         </li>
-       
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-rss"></i> Blog ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="Pages/blog/about.html">About Website</a></li>
+            <li><a href="Pages/blog/gospel-related.html">God & Bible Related</a></li>
+            <li><a href="Pages/blog/technology.html">Technology</a></li>
+          </ul>
+        </li>
+
+        <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
       </ul>
-      <hr>
     </div>
-</details>
-</b>
+  </nav>
 
+  <main class="main-content">
+    <div class="welcome-section">
+      <h1>Welcome to Resources</h1>
+      <p>A curated collection of configuration files, scripts, and educational resources for developers, creators, and enthusiasts. Everything here is free to use and open for collaboration.</p>
+    </div>
 
-<!------------------------------------------------------------------------------------------------------------>
-
-<!------------------------------------------------ Bottom Bar ------------------------------------------------>
-
-<!------------------------------------------------------------------------------------------------------------>
-
-
-    <nav class="socials-nav">
-     
-      <a href="https://www.youtube.com/@ElectricFX">
-        <font color="red">
-          <i class="fa-brands fa-youtube"></i>
-        </font>
+    <div class="social-links">
+      <a href="https://github.com/El3ctricFX" target="_blank" class="social-link">
+        <i class="fab fa-github"></i> GitHub
       </a>
-
-      <a href="https://mastodon.social/@electricfx">
-        <font color="violet">
-          <i class="fa-brands fa-mastodon"></i>
-        </font>
+      <a href="https://x.com/Electric_VFX" target="_blank" class="social-link">
+        <span class="x-icon">𝕏</span> X
       </a>
-
-      <a href="https://x.com/Electric_VFX">
-        <font color="White">
-          <i class="fa-brands fa-x-twitter"></i>
-        </font>
+      <a href="https://www.youtube.com/@ElectricFX" target="_blank" class="social-link">
+        <i class="fab fa-youtube"></i> YouTube
       </a>
-
- 
-      <a href="https://github.com/El3ctricFX">
-        <font color="white">
-          <i class="fa-brands fa-github"></i>
-        </font>
-      </a>  
-      
-
-      <a href="https://codeberg.org/electricfx">
-        <img class="codeberg" src="image/codeberg-logo_icon_white.svg">
+      <a href="https://discord.gg/3uffEcN9g8" target="_blank" class="social-link">
+        <i class="fab fa-discord"></i> Discord
       </a>
-      <a href="https://discord.gg/3uffEcN9g8">
-        <font color="white">
-          <i class="fa-brands fa-discord"></i>
-        </font>
+    </div>
+
+    <div class="contribution-section">
+      <h3>Want to contribute?</h3>
+      <p>This website is open to contributions! Feel free to suggest resources, report issues, or submit improvements to make this collection better for everyone.</p>
+      <a href="https://github.com/El3ctricFX/resources" target="_blank" class="contribute-btn">
+        <i class="fab fa-github"></i> Contribute on GitHub
       </a>
-    </nav>
+    </div>
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.right-nav .menu');
+
+    // Toggle main mobile menu
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle script
+    const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
     
-
-  </body>
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        // Only run this JS handling if we are on a mobile screen width
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const subMenu = dropdown.nextElementSibling;
+          if (subMenu) {
+            subMenu.classList.toggle('mobile-open');
+          }
+        }
+      });
+    });
+  </script>
+</body>
 
 </html>
-
-
-

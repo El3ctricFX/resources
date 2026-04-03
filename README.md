@@ -9,6 +9,3 @@ https://el3ctricfx.github.io/resources (<a href="https://el3ctricfx.github.io/Re
 
 
 ![gif](https://github.com/user-attachments/assets/5ec2f388-9951-4f1c-a407-b5e75edee26c)
-
-
-

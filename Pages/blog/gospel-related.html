@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources — About the Website</title>
+  <title>Resources — God & Bible Related</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -24,7 +24,7 @@
     .back-link a { color: #000; text-decoration: none; font-weight: 500; border: 1px solid #000; padding: 6px 14px; border-radius: 30px; transition: all 0.2s ease; }
     .back-link a:hover { background-color: #000; color: #fff; }
     
-    /* Article View Styling */
+    /* Article View Styling (Identical to About Page) */
     .blog-list {
       display: flex;
       flex-direction: column;
@@ -34,7 +34,6 @@
     .blog-trigger {
       text-decoration: none;
       color: inherit;
-      width: 100%;
     }
     .blog-card {
       border: 2px solid #000;
@@ -47,19 +46,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
     }
     .blog-card:hover {
       transform: translate(-2px, -2px);
       box-shadow: 8px 8px 0px #000;
     }
-    
-    /* Stops code blocks from stretching card layout boundaries */
-    .blog-card > div:first-child {
-      flex: 1;
-      min-width: 0; 
-    }
-    
     .blog-card h3 {
       font-size: 1.4rem;
       margin-bottom: 8px;
@@ -78,7 +69,7 @@
       border-radius: 6px;
       border: 1px solid #000;
       white-space: nowrap;
-      flex-shrink: 0;
+      margin-left: 20px;
     }
 
     /* Modal Styles */
@@ -97,7 +88,6 @@
       backdrop-filter: blur(4px);
     }
     .modal-overlay.active { opacity: 1; visibility: visible; }
-    
     .modal-content {
       background-color: #fff;
       width: 100%;
@@ -112,7 +102,6 @@
       animation: modalSlide 0.3s ease-out;
     }
     @keyframes modalSlide { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-    
     .close-btn {
       position: absolute;
       top: 15px; right: 20px;
@@ -123,19 +112,27 @@
       z-index: 10;
     }
     .close-btn:hover { transform: scale(1.2); color: #ff4444; }
+    .modal-body { padding: 35px; overflow-y: auto; flex-grow: 1; }
     
-    .modal-body { 
-      padding: 35px; 
-      overflow-y: auto; 
-      flex-grow: 1;
-      min-width: 0;
+    /* Custom Zero-MD Styles */
+    .markdown-body { font-family: inherit !important; }
+    .markdown-body a { color: #000 !important; text-decoration: underline !important; }
+    .markdown-body pre { background-color: #f6f8fa !important; border: 1px solid #ddd !important; border-radius: 6px !important; }
+    .markdown-body code { color: #000 !important; background-color: rgba(175, 184, 193, 0.2) !important; }
+    .markdown-body pre code { color: #e6edf3 !important; background-color: transparent !important; }
+    .markdown-body blockquote {
+      padding: 10px 15px !important;
+      color: #555 !important;
+      border-left: 0.25em solid #000 !important;
+      background-color: #f9f9f9 !important;
+      margin: 1em 0 !important;
+      border-radius: 0 4px 4px 0;
     }
-    
   </style>
 </head>
 <body>
 
- <nav class="nav">
+<nav class="nav">
     <div class="left-nav">
       <h1 class="logo"><a href="../../index.html" style="color: inherit; text-decoration: none;">Resources</a></h1>
     </div>
@@ -189,25 +186,25 @@
   <main class="main-content">
     <div class="back-link"><a href="../../index.html">← Back to Resources</a></div>
 
-    <h2>About The Website</h2>
+    <h2>God & Bible Related</h2>
     
     <div class="blog-list">
       
-      <a href="articles/about website/10-20-24.md" class="blog-trigger">
+      <a href="articles/Gospel/10-31-24.md" class="blog-trigger">
         <div class="blog-card">
           <div>
-            <h3>What is this website trying to accomplish?</h3>
-            <p>Within this article you're able to see what im trying to accomplish and do with this website.</p>
+            <h3>Halloween</h3>
+            <p>Within this article im talking about the history of halloween and why as christians we need to be careful.</p>
           </div>
-          <div class="post-date">Oct 20th</div>
+          <div class="post-date">Oct 31st</div>
         </div>
       </a>
 
-      <a href="articles/about website/10-27-24.md" class="blog-trigger">
+      <a href="articles/Gospel/10-27-24.md" class="blog-trigger">
         <div class="blog-card">
           <div>
-            <h3>How i write my articles with HTML & Markdown?</h3>
-            <p>Within this article i talk about how through a script i found online i write my articles with html and markdown.</p>
+            <h3>Isaiah 60</h3>
+            <p>What i talk about in this article is while throughout my day i randomly just thought of this without ever reading it and how its random chance that it appears in my mind and what i mean by chance is its from god🙏</p>
           </div>
           <div class="post-date">Oct 27th</div>
         </div>
@@ -223,36 +220,11 @@
         <zero-md id="modalMarkdown" src="">
           <template>
             <style>
-              .markdown-body { 
-                font-family: inherit !important; 
-                word-wrap: break-word !important;
-              }
+              .markdown-body { font-family: inherit !important; }
               .markdown-body a { color: #000 !important; text-decoration: underline !important; }
-              
-              /* Code Block Dark Background */
-              .markdown-body pre { 
-                background-color: #1e1e1e !important; 
-                border: 1px solid #333 !important; 
-                border-radius: 6px !important;
-                overflow-x: auto !important;
-                padding: 16px !important;
-              }
-              
-              /* Code text defaults to light gray inside pre blocks */
-              .markdown-body pre code { 
-                color: #e6edf3 !important; 
-                background-color: transparent !important; 
-              }
-              
-              /* Darkened Inline Code Background */
-              .markdown-body code { 
-                color: #e6edf3 !important; 
-                background-color: #2b2b2b !important; 
-                padding: 0.2em 0.4em !important;
-                border-radius: 4px !important;
-                font-size: 85% !important;
-              }
-              
+              .markdown-body pre { background-color: #f6f8fa !important; border: 1px solid #ddd !important; border-radius: 6px !important; }
+              .markdown-body code { color: #000 !important; background-color: rgba(175, 184, 193, 0.2) !important; }
+              .markdown-body pre code { color: #e6edf3 !important; background-color: transparent !important; }
               .markdown-body blockquote {
                 padding: 10px 15px !important;
                 color: #555 !important;
