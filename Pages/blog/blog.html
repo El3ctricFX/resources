@@ -1,0 +1,492 @@
+<!-- Pages/blog/blog.html (enhanced clean design with newest-first sorting) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Blog</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
+  <style>
+    /* Override main.css centering for blog page */
+    .main-content {
+      display: block !important;
+      text-align: left !important;
+      padding: 0 !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Hero section */
+    .blog-hero {
+      background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+      padding: 60px 40px;
+      border-bottom: 3px solid #000;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .blog-hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      color: #000;
+    }
+    .blog-hero p {
+      font-size: 1.2rem;
+      color: #444;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Back link styling */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .back-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #000;
+      padding: 6px 14px;
+      border-radius: 30px;
+      transition: 0.2s;
+      background: white;
+    }
+    .back-link a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* Tag filter bar – cleaner pill design */
+    .tag-filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 20px 40px 20px;
+    }
+    .tag-btn {
+      background: transparent;
+      border: 2px solid #000;
+      padding: 8px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #000;
+      box-shadow: none;
+    }
+    .tag-btn:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .tag-btn.active {
+      background: #000;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Blog cards grid */
+    .blog-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 0 20px 60px 20px;
+    }
+    .blog-card {
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 20px;
+      padding: 24px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      box-shadow: 0 8px 0 rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 0 rgba(0,0,0,0.08);
+    }
+    .blog-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #000;
+      line-height: 1.3;
+    }
+    .blog-card p {
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      gap: 12px;
+    }
+    .post-date {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #000;
+      background: #f0f0f0;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+    }
+    .tag-badge {
+      background: #000;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 30px;
+      letter-spacing: 0.3px;
+    }
+
+    /* No posts message */
+    .no-posts {
+      text-align: center;
+      padding: 60px 20px;
+      background: #fafafc;
+      border: 2px solid #000;
+      border-radius: 24px;
+      font-size: 1.2rem;
+      color: #555;
+      margin: 0 20px;
+      box-shadow: 0 8px 0 rgba(0,0,0,0.05);
+    }
+
+    /* Modal stays clean */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 2000;
+      padding: 20px;
+      backdrop-filter: blur(4px);
+    }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+    .modal-content {
+      background-color: #fff;
+      width: 100%;
+      max-width: 900px;
+      max-height: 85vh;
+      border-radius: 24px;
+      border: 2px solid #000;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      animation: modalSlide 0.25s ease-out;
+    }
+    @keyframes modalSlide { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    .close-btn {
+      position: absolute;
+      top: 16px; right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #000;
+      transition: transform 0.2s;
+      z-index: 10;
+    }
+    .close-btn:hover { transform: scale(1.2); color: #ff4444; }
+    .modal-body { padding: 35px; overflow-y: auto; flex-grow: 1; }
+    @media (max-width: 768px) { .modal-body { padding: 20px; } }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .blog-hero { padding: 40px 20px; }
+      .blog-hero h1 { font-size: 2.2rem; }
+      .blog-list { grid-template-columns: 1fr; padding: 0 16px 40px 16px; gap: 20px; }
+      .tag-filter { margin-bottom: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="left-nav">
+    <h1 class="logo"><a href="../../index.html" style="color: inherit; text-decoration: none;">Resources</a></h1>
+  </div>
+  <div class="right-nav">
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+    <ul class="menu">
+      <li class="dropdown">
+        <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+          <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown">
+            <a>Production ▾</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="../Production/videography.html">Videography</a></li>
+              <li><a href="../Production/sounddesign.html">Sound Design</a></li>
+              <li><a href="../Production/graphics.html">Graphics</a></li>
+              <li><a href="../Production/3d.html">3D</a></li>
+              <li><a href="../Production/coding.html">Coding</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a>Techy Stuff ▾</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="../Tech stuff/privateapps.html">Private Apps</a></li>
+              <li><a href="../Tech stuff/useful-resources.html">Useful Resources</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="blog.html"><i class="fa-solid fa-rss"></i> Blog</a></li>
+      <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="main-content">
+  <div class="blog-hero">
+    <div class="back-link"><a href="../../index.html">← Back to Resources</a></div>
+    <h1>The Blog</h1>
+    <p>Articles, thoughts, and resources on technology, faith, and everything in between.</p>
+  </div>
+
+  <!-- Tag filter buttons -->
+  <div class="tag-filter">
+    <button class="tag-btn active" data-tag="all">All</button>
+    <button class="tag-btn" data-tag="about">About Website</button>
+    <button class="tag-btn" data-tag="gospel">God & Bible</button>
+    <button class="tag-btn" data-tag="tech">Technology</button>
+    <button class="tag-btn" data-tag="misc">Miscellaneous</button>
+  </div>
+
+  <div class="blog-list" id="blogList">
+    <!-- Articles injected here -->
+  </div>
+</main>
+
+<!-- Modal for reading articles -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-content">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <div class="modal-body">
+      <zero-md id="modalMarkdown" src="">
+        <template>
+          <style>
+            .markdown-body { font-family: inherit !important; word-wrap: break-word !important; }
+            .markdown-body a { color: #000 !important; text-decoration: underline !important; }
+            .markdown-body pre { background-color: #1e1e1e !important; border: 1px solid #333 !important; border-radius: 8px !important; overflow-x: auto !important; padding: 16px !important; }
+            .markdown-body pre code { color: #e6edf3 !important; background-color: transparent !important; }
+            .markdown-body code { color: #e6edf3 !important; background-color: #2b2b2b !important; padding: 0.2em 0.4em !important; border-radius: 4px !important; font-size: 85% !important; }
+            .markdown-body blockquote { padding: 10px 15px !important; color: #555 !important; border-left: 0.25em solid #000 !important; background-color: #f9f9f9 !important; margin: 1em 0 !important; border-radius: 0 4px 4px 0; }
+          </style>
+        </template>
+      </zero-md>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Helper: convert date string to timestamp (milliseconds)
+  function parseDate(dateStr) {
+    if (!dateStr || dateStr.toLowerCase() === 'progress') return 0;
+    const timestamp = Date.parse(dateStr);
+    return isNaN(timestamp) ? 0 : timestamp;
+  }
+
+  // Article database
+  const articlesRaw = [
+    {
+      title: "What is this website trying to accomplish?",
+      description: "Within this article you're able to see what im trying to accomplish and do with this website.",
+      date: "October 20, 2024",
+      tag: "about",
+      path: "articles/about website/10-20-24.md"
+    },
+    {
+      title: "How i write my articles with HTML & Markdown?",
+      description: "Within this article i talk about how through a script i found online i write my articles with html and markdown.",
+      date: "October 27, 2024",
+      tag: "about",
+      path: "articles/about website/10-27-24.md"
+    },
+    {
+      title: "Abrahamic Religions",
+      description: "Throughout this article it shows the differences between all three of the Abrahamic religions (Christianity, Islam, and Judaism)",
+      date: "Progress",
+      tag: "gospel",
+      path: "articles/Gospel/04-11-26.md"
+    },
+    {
+      title: "Matthew 2 Notes",
+      description: "Notes that i was taking while reading Matthew 2 and some cool prophecies Jesus had fulfilled and how meaningful they where in that time period",
+      date: "April 20, 2026",
+      tag: "gospel",
+      path: "articles/Gospel/04-20-26.md"
+    },
+    {
+      title: "Halloween",
+      description: "Within this article im talking about the history of halloween and why as christians we need to be careful.",
+      date: "Oct 31, 2024",
+      tag: "gospel",
+      path: "articles/Gospel/10-31-24.md"
+    },
+    {
+      title: "Isaiah 60",
+      description: "What i talk about in this article is while throughout my day i randomly just thought of this without ever reading it and how its random chance that it appears in my mind and what i mean by chance is its from god🙏",
+      date: "Oct 27, 2024",
+      tag: "gospel",
+      path: "articles/Gospel/10-27-24.md"
+    },
+    {
+      title: "Life with Gratitude",
+      description: "What i talk about in this article is while throughout my day i randomly just thought of this without ever reading it and how its random chance that it appears in my mind and what i mean by chance is its from god🙏",
+      date: "April 30, 2026",
+      tag: "misc",
+      path: "articles/misc/04-30-2026.md"
+    }
+    // Add more posts as needed, including "tech" or "misc" tags
+  ];
+
+  // Add timestamp to each article for sorting
+  const articles = articlesRaw.map(article => ({
+    ...article,
+    timestamp: parseDate(article.date)
+  }));
+
+  const blogList = document.getElementById('blogList');
+  const filterBtns = document.querySelectorAll('.tag-btn');
+  let currentFilter = 'all';
+
+  function renderArticles() {
+    // First filter by current tag
+    let filtered = articles.filter(article => {
+      if (currentFilter === 'all') return true;
+      if (currentFilter === 'misc') return article.tag === 'misc';
+      return article.tag === currentFilter;
+    });
+
+    // Sort filtered: newest first (higher timestamp first), then "Progress" (0) at the end, then by title
+    filtered.sort((a, b) => {
+      if (a.timestamp !== b.timestamp) return b.timestamp - a.timestamp;
+      return a.title.localeCompare(b.title);
+    });
+
+    if (filtered.length === 0) {
+      blogList.innerHTML = `<div class="no-posts">📭 No posts yet. Check back later!</div>`;
+      return;
+    }
+    
+    blogList.innerHTML = filtered.map(article => `
+      <div class="blog-card" data-path="${article.path}">
+        <h3>${escapeHtml(article.title)}</h3>
+        <p>${escapeHtml(article.description)}</p>
+        <div class="card-meta">
+          <span class="post-date"><i class="far fa-calendar-alt"></i> ${escapeHtml(article.date)}</span>
+          <span class="tag-badge">${escapeHtml(getTagName(article.tag))}</span>
+        </div>
+      </div>
+    `).join('');
+
+    // Add click event listeners to cards
+    document.querySelectorAll('.blog-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const path = card.getAttribute('data-path');
+        if (!path || path === '#') return;
+        const zeroMd = document.getElementById('modalMarkdown');
+        zeroMd.setAttribute('src', path);
+        zeroMd.render();
+        document.getElementById('modalOverlay').classList.add('active');
+      });
+    });
+  }
+
+  function getTagName(tagCode) {
+    switch(tagCode) {
+      case 'about': return 'About Website';
+      case 'gospel': return 'God & Bible';
+      case 'tech': return 'Technology';
+      case 'misc': return 'Miscellaneous';
+      default: return tagCode ? tagCode.charAt(0).toUpperCase() + tagCode.slice(1) : 'Miscellaneous';
+    }
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/[&<>]/g, function(m) {
+      if (m === '&') return '&amp;';
+      if (m === '<') return '&lt;';
+      if (m === '>') return '&gt;';
+      return m;
+    });
+  }
+
+  // Filter button event listeners
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.getAttribute('data-tag');
+      renderArticles();
+    });
+  });
+
+  // Initial render
+  renderArticles();
+
+  // Modal close logic
+  const overlay = document.getElementById('modalOverlay');
+  const closeModal = () => overlay.classList.remove('active');
+  document.getElementById('closeBtn').addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal(); });
+
+  // Mobile navigation toggle
+  const menuToggle = document.getElementById('mobile-menu');
+  const navMenu = document.querySelector('.right-nav .menu');
+  if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  }
+  const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        const subMenu = dropdown.nextElementSibling;
+        if (subMenu) subMenu.classList.toggle('mobile-open');
+      }
+    });
+  });
+</script>
+</body>
+</html>

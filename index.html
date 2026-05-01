@@ -1,3 +1,4 @@
+<!-- index.html (updated navigation) -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,14 +57,8 @@
           </ul>
         </li>
 
-        <li class="dropdown">
-          <a><i class="fa-solid fa-rss"></i> Blog ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="Pages/blog/about.html">About Website</a></li>
-            <li><a href="Pages/blog/gospel-related.html">God & Bible Related</a></li>
-            <li><a href="Pages/blog/technology.html">Technology</a></li>
-          </ul>
-        </li>
+        <!-- BLOG DROPDOWN REPLACED WITH SINGLE LINK -->
+        <li><a href="Pages/blog/blog.html"><i class="fa-solid fa-rss"></i> Blog</a></li>
 
         <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
       </ul>
@@ -104,18 +99,14 @@
     const menuToggle = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.right-nav .menu');
 
-    // Toggle main mobile menu
     menuToggle.addEventListener('click', () => {
       menuToggle.classList.toggle('active');
       navMenu.classList.toggle('active');
     });
 
-    // Mobile dropdown toggle script
     const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
-    
     dropdowns.forEach(dropdown => {
       dropdown.addEventListener('click', (e) => {
-        // Only run this JS handling if we are on a mobile screen width
         if (window.innerWidth <= 768) {
           e.preventDefault();
           const subMenu = dropdown.nextElementSibling;
