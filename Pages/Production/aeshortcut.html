@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — After Effects Shortcuts</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5402/5402751.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* override centering from main.css */
+    .main-content {
+      display: block !important;
+      text-align: left !important;
+      align-items: unset !important;
+      justify-content: unset !important;
+      padding: 20px 30px !important;
+      max-width: 100%;
+      margin: 0;
+      width: 100%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .back-link a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid #000;
+      padding: 4px 12px;
+      font-size: 0.85rem;
+      border-radius: 0px;
+      box-shadow: 3px 3px 0 rgba(0,0,0,1);
+      transition: 0.1s;
+    }
+    .back-link a:hover {
+      background: #000;
+      color: #fff;
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0 rgba(0,0,0,1);
+    }
+
+    /* Grid layout to fit everything on one screen */
+    .shortcuts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .table-section {
+      background: #fff;
+      border: 2px solid #000;
+      box-shadow: 4px 4px 0 rgba(0,0,0,1);
+      padding: 1rem;
+    }
+
+    .table-section h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .resource-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #000;
+    }
+    th, td {
+      border: 1px solid #eee;
+      padding: 6px 8px;
+      vertical-align: middle;
+      font-size: 0.85rem;
+    }
+    th {
+      background: #f8f8f8;
+      font-weight: 700;
+      text-align: left;
+      border-bottom: 1px solid #000;
+    }
+
+    kbd {
+      background: #fafafc;
+      border: 1px solid #000;
+      box-shadow: 1px 1px 0 #000;
+      padding: 1px 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 700;
+      font-size: 0.8rem;
+      display: inline-block;
+      margin: 1px;
+    }
+
+    .footer-date {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #888;
+      font-weight: 600;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1100px) {
+      .shortcuts-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .shortcuts-grid { grid-template-columns: 1fr; }
+      .main-content { padding: 15px !important; }
+    }
+  </style>
+</head>
+
+<body>
+<nav class="nav">
+    <div class="left-nav">
+      <h1 class="logo"><a href="../../index.html" style="text-decoration: none; color: inherit;">Resources</a></h1>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+
+    <div class="right-nav">
+      <ul class="menu">
+        <li class="dropdown">
+          <a><i class="fa-solid fa-download"></i> Public Downloads ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/El3ctricFX/Scripts">Scripts</a></li>
+            <li><a href="https://github.com/El3ctricFX/.dotfiles">Configuration Files</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a><i class="fa-solid fa-list"></i> Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a>Production ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="videography.html">Videography</a></li>
+                <li><a href="sounddesign.html">Sound Design</a></li>
+                <li><a href="graphics.html">Graphics</a></li>
+                <li><a href="3d.html">3D</a></li>
+                <li><a href="coding.html">Coding</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a>Techy Stuff ▾</a>
+              <ul class="sub-dropdown-menu">
+                <li><a href="../Tech stuff/privateapps.html">Private Apps</a></li>
+                <li><a href="../Tech stuff/useful-resources.html">Useful Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="../blog/blog.html"><i class="fa-solid fa-rss"></i> Blog</a></li>
+
+        <li><a href="https://worship.pages.dev/" class="jesus"><i class="fa-solid fa-cross"></i> Jesus <i class="fa-solid fa-cross"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="back-link"><a href="videography.html">← Back</a></div>
+
+    <h2 style="font-size: 1.4rem; margin-bottom: 1.2rem;">After Effects Shortcuts</h2>
+
+    <div class="shortcuts-grid">
+      <!-- COLUMN 1: TRANSFORM -->
+      <div class="table-section">
+        <h3>Transform Properties</h3>
+        <table class="resource-table">
+          <thead>
+            <tr><th>Action</th><th>Shortcut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Scale</td><td><kbd>S</kbd></td></tr>
+            <tr><td>Position</td><td><kbd>P</kbd></td></tr>
+            <tr><td>Opacity</td><td><kbd>T</kbd></td></tr>
+            <tr><td>Rotation</td><td><kbd>R</kbd></td></tr>
+            <tr><td>Anchor Point</td><td><kbd>A</kbd></td></tr>
+            <tr><td>Center Anchor</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Home</kbd></td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top: 1.2rem;">Extra Info</h3>
+        <table class="resource-table">
+          <thead>
+            <tr><th>Action</th><th>Shortcut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Create Light</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td></tr>
+            <tr><td>Create Camera</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></td></tr>
+            <tr><td>Create Null</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd></td></tr>
+            <tr><td>Recent Effect</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd></td></tr>
+            <tr><td>Remove Effects</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td></tr>
+            <tr><td>Open Console</td><td><kbd>Ctrl</kbd>+<kbd>F12</kbd></td></tr>
+            <tr><td>FX Console</td><td><kbd>Ctrl</kbd>+<kbd>Space</kbd></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- COLUMN 2: BASICS (Part 1) -->
+      <div class="table-section">
+        <h3>Basics</h3>
+        <table class="resource-table">
+          <thead>
+            <tr><th>Action</th><th>Shortcut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Time Remap</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd></td></tr>
+            <tr><td>Cut / Split</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td></tr>
+            <tr><td>Duplicate</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td></tr>
+            <tr><td>Undo</td><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td></tr>
+            <tr><td>Redo</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td></tr>
+            <tr><td>Import</td><td><kbd>Ctrl</kbd>+<kbd>I</kbd></td></tr>
+            <tr><td>Waveforms</td><td>Double Click <kbd>L</kbd></td></tr>
+            <tr><td>Markers</td><td><kbd>*</kbd> (Numpad)</td></tr>
+            <tr><td>Text Tool</td><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td></tr>
+            <tr><td>Adj. Layers</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Y</kbd></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- COLUMN 3: BASICS (Part 2) -->
+      <div class="table-section">
+        <h3>File & Project</h3>
+        <table class="resource-table">
+          <thead>
+            <tr><th>Action</th><th>Shortcut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Create Solids</td><td><kbd>Ctrl</kbd>+<kbd>Y</kbd></td></tr>
+            <tr><td>Render Queue</td><td><kbd>Ctrl</kbd>+<kbd>M</kbd></td></tr>
+            <tr><td>Save Project</td><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td></tr>
+            <tr><td>Save New File</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td></tr>
+            <tr><td>Enlarge Tabs</td><td><kbd>`</kbd> (Tilde)</td></tr>
+            <tr><td>New Comp</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd></td></tr>
+            <tr><td>Preview (No Audio)</td><td><kbd>.</kbd> (Numpad)</td></tr>
+            <tr><td>Pre-comp</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></td></tr>
+          </tbody>
+        </table>
+        <div class="footer-date">Created 1/25/2023</div>
+      </div>
+    </div>
+
+  </main>
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.right-nav .menu');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    const dropdowns = document.querySelectorAll('.right-nav .dropdown > a');
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const subMenu = dropdown.nextElementSibling;
+          if (subMenu) subMenu.classList.toggle('mobile-open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
